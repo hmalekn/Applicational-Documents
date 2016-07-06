@@ -1,0 +1,1 @@
+The actual documentation is the index.html file (located in the same folder as this file) - you can open it with your favorite browser.

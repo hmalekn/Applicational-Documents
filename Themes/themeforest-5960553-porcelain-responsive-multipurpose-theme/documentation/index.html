@@ -1,0 +1,2363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Porcelain Theme Documentation</title>
+	<!-- Framework CSS -->	
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+	<link type="text/css" rel="stylesheet" href="css/SyntaxHighlighter.css">
+
+	<script language="javascript" src="js/libs.js"></script>
+	<script language="javascript" src="js/script.js"></script>
+	<script language="javascript" src="js/shCore.js"></script>
+	<script language="javascript" src="js/shBrushCss.js"></script>
+	<script language="javascript" src="js/shBrushXml.js"></script>
+	<script language="javascript" src="js/shBrushJScript.js"></script>
+	<script language="javascript">
+	window.onload = function () {
+	    dp.SyntaxHighlighter.ClipboardSwf = '/js/clipboard.swf';
+	    dp.SyntaxHighlighter.HighlightAll('code');
+	}
+
+	</script>
+	
+</head>
+
+
+<body>
+  <div id="lineTop" ></div>
+	<div class="container">
+	
+	
+		<h3 class="center alt title">&ldquo;Porcelain WordPress Theme&rdquo; Documentation by &ldquo;Pexeto&rdquo; v.1.3.5</h3>
+		
+		<hr>
+		
+		<div id="logo" class="center"><a href="index.html"></a></div>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 23 October 2013<br>
+					By: Pexeto<br>
+					<a href="http://pexetothemes.com/">http://pexetothemes.com/</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing Porcelain theme. If you have any questions that are beyond the scope of this help file, please refer to the <a href="#support">Support section</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<div id="web_links" >       
+ 
+ <ul>
+        
+       <li> <a href="http://twitter.com/pexeto" ><img src="images/doc/doc_button1.png" /></a></li>
+       <li> <a href="http://themeforest.net/user/pexeto/portfolio" ><img src="images/doc/doc_button2.png" /></a></li>
+       <li> <a href="http://pexetothemes.com/" ><img src="images/doc/doc_button3.png" /></a></li>
+       </ul>
+       
+       </div>
+		
+		<div class="like"><h3 class="center message">If you like this theme, please don't forget to rate it on the <a href="http://themeforest.net/user/pexeto/portfolio" >ThemeForest site</a>. Thank you!</h3></div>
+		<br />
+        <br />
+
+        <div id="doc-menu">
+		<h2 id="toc" class="alt content">Table of <strong>Contents</strong></h2>
+		<hr />
+		
+		<ol class="alpha">
+		<li><a href="#start">Getting Started</a>
+	<ol>
+				<li><a href="#newtowp">If you are new to WordPress</a></li>
+				<li><a href="#working-theme">Working with the theme</a></li>
+			</ol>
+		</li>
+		 <li><a href="#activate">Installing and activating the theme</a></li>
+		<li><a href="#html">Useful instructions</a>
+		      <ol>
+        <li><a href="#options">Options page</a></li>
+        <li><a href="#custom">Page Settings Section</a></li>
+        <li><a href="#thumbnail">Setting a featured image to a post/page</a></li>
+      </ol>
+		</li>
+		<li><a href="#header">The header</a>
+		<ol>
+        <li><a href="#change_logo">Changing the logo</a></li>
+        <li><a href="#menu">Setting the menu</a></li>
+        <li><a href="#sociable">Setting the social network icons</a></li>
+        <li><a href="#header_search">Header search field</a></li>
+        <li><a href="#header_style">Changing the default background color and image</a></li>
+        <li><a href="#sticky_header">Setting a sticky header</a></li>
+        <li><a href="#header_title">Showing/hiding the page title</a></li>
+      </ol>
+		</li>
+	    <li><a href="#footer">The footer</a>
+		<ol>
+			<li><a href="#footer-cta">Call to action section</a></li>
+			<li><a href="#footer-widget">Widgetized area</a></li>
+			<li><a href="#footer-copy">Copyright and footer menu section</a></li>
+		</ol>
+	    </li>
+	    <li><a href="#sidebar">The sidebars</a></li>
+	    <li><a href="#sliders">Sliders</a>
+	    	<ol>
+	    		<li><a href="#contentslider">Content Slider</a></li>
+	    		<li><a href="#nivoslider">Nivo Slider</a></li>
+	    	</ol>
+	    </li>
+		</li>
+		<li><a href="#template">Template pages</a>
+		<ol>
+		<li><a href="#default">The Default Page</a></li>
+		<li><a href="#custom_page">Home Page - Full-width custom page template</a></li>
+		<li><a href="#index">Blog Page</a></li>  
+		<li><a href="#grid_gallery">Portfolio Gallery Page</a></li>
+        <li><a href="#quick_gallery">Quick/Easy Gallery Page</a></li>
+        <li><a href="#contact">Contact Form Page</a></li>
+        <li><a href="#archive">Archive Page</a></li>
+        </ol>
+		</li>
+		<li><a href="#elements">Elements</a>
+		<ol>
+			<li><a href="#services">Services Boxes</a></li>
+			<li><a href="#carousel">Portfolio Carousel</a></li>
+			<li><a href="#posts_element">Recent Blog Posts Element</a></li>
+		 	<li><a href="#testimonials">Testimonial slider</a></li>
+		 	<li><a href="#cta">Call to action circle</a></li>
+			<li><a href="#nivo_content">Nivo slider in page/post content</a></li>
+			<li><a href="#pricing">Pricing Tables</a></li>
+		 	<li><a href="#sharing">Social Sharing Buttons</a></li> 
+       		<li><a href="#accordion">Accordion</a></li>
+       		<li><a href="#tabs">Tabs</a></li>
+       		<li><a href="#contact_form">Sidebar Contact Form</a></li>
+       		<li><a href="#formatting_buttons">Other editor Formatting Buttons</a></li> 
+        </ol>
+		</li>
+		<li><a href="#styles">Changing the theme style</a></li>
+		
+		<li><a href="#fonts">Fonts</a>
+		<li><a href="#translation">Translation</a>
+		<ol>
+			<li><a href="#create_mo">Creating a mo file with the translated strings</a></li>
+			<li><a href="#set_locale">Configuring your language locale</a></li>
+		</ol>
+		</li>
+		<li><a href="#auto_resizing">Automatic image resizing/cropping</a></li>
+		<li><a href="#widgets">Plugins included</a></li>
+		<li><a href="#css">CSS files</a></li>
+    <li><a href="#js">JavaScript files</a></li>
+    <li><a href="#psd">Image resources</a></li> 
+     <li><a href="#php">PHP files</a></li>
+     <li><a href="#child_theme">Installing a child theme</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+    <li><a href="#support">Support</a></li>
+     <li><a href="#updates">Updates</a>
+		<ol>
+			<li><a href="#install-update">Installing an update</a></li>
+     		<li><a href="#v101">Version 1.0.1</a></li>
+     		<li><a href="#v110">Version 1.1.0</a></li>
+     		<li><a href="#v120">Version 1.2.0</a></li>
+     		<li><a href="#v121">Version 1.2.1</a></li>
+     		<li><a href="#v130">Version 1.3.0</a></li>
+     		<li><a href="#v131">Version 1.3.1</a></li>
+     		<li><a href="#v132">Version 1.3.2</a></li>
+     		<li><a href="#v133">Version 1.3.3</a></li>
+     		<li><a href="#v134">Version 1.3.4</a></li>
+     		<li><a href="#v135">Version 1.3.5</a></li>
+     	</ol>
+     </li>
+        </ol>
+		
+		</div>
+		<div class="note_box">
+		<p> <b>Note: </b>
+		If you have any questions that are beyond the scope of this help file, please refer to the <a href="#support">Support section</a>.
+		</p>
+		</div>
+		
+	  <br />
+	  
+	    <h2><a name="start">1. Getting Started</a></h2>
+		<hr />
+
+		<h3><a name="newtowp">a. If you are new to WordPress</a></h3>
+		<hr/>
+		
+		<p>Although building a website with WordPress is significantly much easier than coding it by yourself, 
+		if you are a beginner, even working with WordPress may be difficult to you. That's why, in this section we will
+		provide some useful links and also will explain how to get oriented in the documentation and what pattern to
+		follow when building your website with our theme.<br/>
+		Please note that this documentation covers all the main settings for the theme, but it doesn't cover
+		instructions about working with WordPress, as this is a very extensive topic. If you are new
+		to WordPress, we would recommend to first get familiar with the WordPress system, so you can have
+		at least basic knowledge about how it works and then proceed with setting the theme.</p><br/>
+		
+		<b><u>Working with WordPress - Useful Links</u></b><br />
+		<ul>
+		<li><a href="http://codex.wordpress.org/Main_Page">The WordPress Codex</a> - the official WordPress manual containing lots of information and tutorials about working with WordPress.</li>
+		<li><a href="https://www.wp101.com/tutorials/">WP101 Basics Training</a> - the perfect beginning spot for those just getting started with WordPress. 
+		The video tutorials provided are very helpful to easily understand how WordPress works.</li>
+		</ul>
+		
+		<br />
+
+		
+		
+		<h3><a name="working-theme">b. Working with the theme</a></h3>
+<hr/>
+		<p>Once you have some basic WordPress knowledge, you are ready to go with setting the theme. Here are some example steps about how you can do this: </p>
+		<ol>
+		<li>Install and activate the theme - read about how to do this in the <a href="#activate">Installing and activating the theme</a> section.<br />
+		Having problems with installing the theme? <br />
+		&raquo; Refer to the "Fail to install the theme" subsection of the <a href="#troubleshooting">Troubleshooting</a> section.
+		</li>
+		<li>Change your logo - learn how to do this in the  <a href="#change_logo">Changing the logo</a> section</li>
+		<li>Create your basic menu - during the process of setting your theme, you will be changing your menu links all the time. However, it is
+		good to start with having the main menu set. Learn how to set your menu in the  <a href="#menu">Setting the menu</a> section.</li>
+		<li>Start with creating your content
+		<p>You can create all the content by creating your pages one by one. Here are some examples of what steps to
+		follow when creating different pages:</p>
+
+		
+		
+		<b>If you need a full-width custom home page:</b>
+		<ol>
+		<li>Go to <a href="#template">Template pages</a> &raquo; <a href="#custom_page">Home Page - Full-width custom page template</a> section to learn how
+		to create the page and how to add elements to it.</li>
+		<li>You need to set a slider for that page? &raquo; Go to the <a href="#sliders">Sliders</a> section to read how
+			to create a slider. After you have your slider created and populated with images, you have to select the slider you have created for the page (how to set the slider is explained in both the slider's section and the full-width custom page template section)</li>
+		</ol>
+
+		
+		<b>If you need a Blog page:</b>
+		<ol>
+		<li>Go to <a href="#template">Template pages</a> &raquo; <a href="#index">Blog page</a> section to learn how
+		to create a blog page, how to create posts to it and all the settings you can do for this page</li>
+		<li>You need to set a slider for the blog? &raquo; Go to the <a href="#sliders">Sliders</a> section to read how
+			to create a slider. After you have your slider created and populated with images, you have to select the slider you have created for the page (how to set the slider is explained in both the slider's section and the blog page section)</li>
+		<li>You need a separate blog sidebar? &raquo; Go to the <a href="#sidebar">The sidebars</a> section to learn how
+		to create additional sidebars and how to add widgets to them. After you have created your sidebar, go back to the
+		<a href="#index">Blog page</a> section to learn how to set the sidebar you have created to your blog page.
+		</li>
+		</ol>
+
+		<br />
+		<p>Basically, these are the steps you have to follow - when you need to create a page, just go to its corresponding subsection
+		of the <a href="#template">Template pages</a> section and read about how to create it and what settings you can do for the page.
+		The main key about understanding how the theme works is to read the documentation we have provided carefully, as we
+		have explained everything you need to know about the theme in here.</p>
+		
+		</li>
+		<li>Once you follow all these steps and have the basic theme setup, you can also check the rest of the sections
+		of this documentation to read more about the other features that our theme provides.</li>
+		</ol>
+	
+		<p>We hope you will enjoy working with the theme!</p>
+		
+		<hr/>
+		<br/>
+	  
+	  <h2><a name="activate">2. Installing and activating the theme</a></h2>
+		<hr />
+		
+		
+		<p>There are 2 main ways to upload the theme:</p>
+		<ol>
+		<li><b>Via the built in WordPress theme uploader</b>
+		<p>You can read the instructions about installing a theme via the WordPress uploader below, but you can also
+		watch the "<i>Installing a Pexeto Theme via WordPress Uploader</i>" video <a href="http://pexetothemes.com/support/knowledgebase/installing-a-pexeto-theme/">here</a></p>
+		<p>First you have to unzip the download file and find the zip file called <b>porcelain.zip</b>.
+		After this you have to go in the admin panel &raquo; Appearance &raquo; Themes, click on the
+		<b>Install Themes tab</b> and then click on the "Upload" tab (located in the top section of the page). After you click the "Upload" tab, a new page
+		will be opened where you will be asked to find the .zip file on your local
+		file system. </p>
+		<div class="note_box"><b>Note:</b> Some servers have limited folder access settings applied and wouldn't allow uploading the theme trough the
+		admin - in these case you have to upload the theme via FTP.</div>
+		</li>
+		<li><b>Via FTP client</b>
+		<p>You can read the instructions about installing a theme via FTP below, but you can also
+		watch the "<i>Installing a Pexeto Theme via FTP</i>" video <a href="http://pexetothemes.com/support/knowledgebase/installing-a-pexeto-theme/">here</a></p>
+		<p>If you know the FTP login details of the server where your site is hosted and you have a
+		FTP client installed (such as FileZilla), you might consider using this way of uploading your theme. First you have to
+		unzip the download file, find the zip file called <b>porcelain.zip</b>, unzip it and upload the folder to the 
+		main WordPress installation folder &raquo; wp-content &raquo; themes. Please note that if you 
+		prefer this way of installation, you have to make sure that the main files of the theme are contained
+		just within one folder of the <b>themes</b> folder. The right way to locate your root theme files is
+		for example <b>themes/porcelain</b> but not <b>themes/porcelain/porcelain</b>.</p>
+		</li>
+		</ol>
+		<p>You can activate the theme after it is uploaded on the server.
+		 In order to activate this theme you have to go to the admin panel &raquo; Appearance &raquo; Themes. In this section you should
+  see the theme with a title <b>Porcelain by Pexeto</b>. Just click on the <b>Activate</b> button and your theme should get activated.
+   </p>
+	
+	
+	<div class="note_box"><b>Minimal Theme Requirements:</b><br />
+	-WordPress v.3.9 or higher<br />
+	-PHP v.5.0 or higher
+	</div>
+
+	
+	<br/>	
+<hr />	
+	  
+		<a name="html" ><h2>3. Useful instructions<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+			
+<h3><a name="options">a. Options page</a></h3>
+<hr/>
+<p>
+When you activate this theme, an options page that contains global theme settings
+is created. This page is located in the <b>admin panel &raquo; Porcelain &raquo; Porcelain Options</b>.
+</p>
+	<img src="images/options_link.jpg" width="150" alt="" />
+	<br/><br/>	
+	
+	<img src="images/pexeto_panel.jpg" width="500" alt="" />
+	<br/><br/>	
+	
+ 
+     <h3><a name="custom" >b. Page Settings section</a></h3>
+  <hr>   
+        <p>We have also added a custom settings section for the 
+        	pages/posts where you can apply custom settings for each single page and post and
+        	these settings won't be applied globally to the theme. This settings section is
+        	located below the main content editor of the page/post opened it edit mode. For example, in the
+        	pages this section is called "PORCELAIN PAGE SETTINGS".</p>
+        <img src="images/page_settings.jpg" width="450" alt="" />
+        
+        <br/><br/>
+        <h3><a name="thumbnail" >c. Setting a featured image to a post/page</a></h3>
+  <hr>  
+  	
+
+  	<p>In order to set a thumbnail (featured image) to a post/page, when creating/editing your post/page in the bottom of the right sidebar
+  you will see a link "Set a Featured Image":<br/>
+  <img src="images/set_thumbnail.jpg" width="280" /><br/>
+  If you click on this link, a window will be opened where 
+  you can choose the image. When you select the desired image, you have to click on the "Set featured image"
+  link.</p><br/>
+
+
+        <br/>
+        <a name="header" ><h2>4. The header<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+
+		<p> The header consists of four main elements:</p>
+		<ul>
+			<li>Logo</li>
+			<li>Menu</li>
+			<li>Social Network Icons</li>
+			<li>Search field</li>
+		</ul>
+		<img src="images/header.jpg" width="600" alt="" /><br/><br/>
+
+		<h3><a name="change_logo">a. Changing the logo</a></h3>
+		<hr />
+      
+    <img src="images/logo.jpg" alt="" width="160"/><br />
+  
+        <p> To change the logo image, you can either use your own existing logo image or edit the included logo PSD file - it is called <b>logo.psd</b> and is located within the PSD folder.
+    </p>
+ 
+  <p>After you have your logo image, you have to go to the Porcelain Options &raquo; <b>General Settings &raquo; Main &raquo; Logo</b> 
+  and upload (or insert the image URL) in the <b>Logo Image</b> section. If you would like to have
+  a sharp logo image on retina displays, the image uploaded should be twice bigger than its
+  display size - for example if the standard logo image size is 30x70 pixels, the image size of the
+  uploaded image should be 60x140 pixels. <br/>
+
+  The default logo image width is 133 pixels and the height depends on the 
+original image ratio. If you would like to apply custom width or height to the
+logo image, you can do this in the "Custom logo width" and "Custom logo height" fields.</p>
+  <img src="images/set_logo.jpg" alt="" width="400"/>
+  
+
+
+<br/>  
+  <br />
+<h3><a name="menu">b. Setting the menu</a></h3>
+		<hr />
+
+		<img src="images/menu.jpg" width="300" alt="" /><br />
+
+		<p>When you fisrt install the theme, the menu will contain all the pages created and
+		it sets drop-downs when there is a parent/child hierarchy created within the pages.
+		However, we would recommend building your custom menu by using the WordPress
+		Custom Menus functionality, as it is more flexible and very easy to work with.
+		To learn how to create a WordPress Custom Menu, you can follow the instructions below.</p>
+
+
+ 
+         <p>Here are the steps you have to follow in order to set the menu:</p>
+         <ol>
+         <li>Go to Appearance &raquo; Menus. To create the menu click on the
+         	"Create a new menu" link.
+		<br/><img src="images/create_menu.jpg" width="450">
+         </li>
+
+         <li> After you create the menu, you can
+         add Page, Category and custom links from the left sidebar.
+         <br/>
+         <img src="images/custom_menu.jpg" width="400" />
+         </li>
+         <li>Then click on the "Manage Locations" tab section and select the menu that you have created
+         	in the "Porcelain Theme Main Menu" field.
+        <br /> <img src="images/set_menu.jpg" width="580" />
+         </li>
+         </ol>
+	
+
+  <br/>  
+<h3><a name="sociable">c. Setting the social network icons</a></h3><hr />
+  <img src="images/social.jpg" alt="" width="100"/>
+ 	<p>To set the icons, you have to go to <b>Porcelain Options &raquo; General Settings &raquo; Social &raquo;
+ 	Header Social Icons</b> section.</p>
+		<p>You can add
+		the icons you like into the "Add a social icon" field:<br />
+		1. Select the icon<br />
+		2. Insert the link of the icon in the "Social Link" field<br />
+		3. Insert a hover title (optional) - this title will be displayed when you hover the icon with the mouse<br />
+		4. Click on the "Add Icon" field to add the icon<br />
+		 </p>
+		<img src="images/set_social.jpg" width="400" />
+		<p><b>Note:</b><i> Don't forget to click on the "Save Changes" button after you finish setting the Social Icons section.</i></p>
+	
+
+
+<br/>  
+<h3><a name="header_search">d. Header search field</a></h3><hr />
+<p>The header search field can be enabled/disabled in the <b>Porcelain Options &raquo; General Settings &raquo; Main &raquo;
+Display Search in Header field</b>.</p>
+
+<br/>  
+<h3><a name="header_style">e. Changing the default background color and image</a></h3><hr />
+<p>You can set a custom background image and background color to the header section:</p>
+
+<img src="images/header_img.jpg" width="600" alt="">
+
+<p>There are two ways to apply these settings:</p>
+<ul>
+	<li><b>Globally for all the pages</b> - the color you set in the
+	<b>Porcelain Options &raquo; Style Settings &raquo; Accent Color</b> fields will be
+	set as a header color for all the pages. You can also set a background image for
+all the pages in the <b>Porcelain Options &raquo; Style Settings &raquo; Header background image</b>
+field.</li>
+	<li><b>Custom for each page</b> - you can apply a custom background color and background image
+		for each page in the <b>Header Background</b> field of the settings section of the page:<br/>
+	<img src="images/header_bg.jpg" width="700" alt="">
+	</li>
+</ul>
+
+<p>You can also apply an overlay background to the header section to improve the
+readability and visibility of the menu links and the other elements, especially
+when using light images.</p>
+<img src="images/header_bg_overlay.jpg" width="600" alt="">
+<p>You can enable this overlay background in the <b>Porcelain Options &raquo; Style Settings &raquo; Set a dark transparent background to the top header</b> field.</p>
+
+
+
+<br/>  
+<h3><a name="sticky_header">f. Setting a sticky header</a></h3><hr />
+
+	<p>The sticky header is enabled by default, you can enable/disable it in the
+	 <b>Porcelain Options &raquo; General Settings &raquo; Main &raquo; "Sticky Header"</b> field. When enabled the header will be always displayed in the top section
+		of the window, even after the user scrolls down the page.</p>
+
+
+    <br/>    
+
+
+<br/>  
+<h3><a name="header_title">g. Showing/hiding the page title</a></h3><hr />
+
+<p>The page title is always displayed by default</p>
+
+<img src="images/header_title.jpg" width="600" alt=""><br/><br/>
+
+There are two ways to set whether to show it or not:
+<ul>
+	<li><b>Globally</b> for all the pages you can select whether to show the pages
+		title in the <b>Porcelain Options &raquo; Post &amp; Page Settings &raquo;
+		Pages &raquo; Display page title</b> field.</li>
+	<li><b>For each page</b> in the <b>Display Page Title</b> <a href="#custom">custom field</a>
+		of the page. By default this field is set to apply the globally selected option,
+		but you can also select the "Show" or "Hide" option for the page specifically.</li>
+</ul>
+
+        
+        
+        <a name="footer" ><h2>5. The footer<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+	
+		<img src="images/footer.jpg" width="700" />
+		
+		<p>The footer consists of three main sections:</p>
+		<ul>
+			<li>Call to action section</li>
+			<li>Widgetized area</li>
+			<li>Copyright and footer menu section</li>
+		</ul>
+<br/>
+		<h3><a name="footer-cta">a. Call to action section</a></h3>
+<hr/>
+		<p>The "Call to action" section looks like this:</p>
+		<img src="images/call_to_action.jpg" width="700" />
+
+		<p>All the settings for this section can be applied in the <b>Porcelain Options &raquo; 
+			General Settings &raquo; Footer &raquo; Call to action</b> section:</p>
+			<ul>
+					<li>You can enable/disable this section in the "Show call to 
+						action section above footer columns" field</li>
+					<li>You can insert all the settings for the section such as
+						title, description, button text, etc. in the other fields
+						below</li>
+					<li>If you are using the theme in multiple languages you can
+					enable the "Use texts for this section from translated PO file(s)"
+					option and set these texts within the PO file included instead of
+					the options panel. For more information about theme translation
+					you can refer to the <a href="#translation">Translation</a>
+					section.</li>
+				</ul>
+
+<br/>
+		<h3><a name="footer-widget">b. Widgetized area</a></h3>
+<hr/>
+
+		<p>The widgetized area looks like this:</p>
+		<img src="images/footer_widgets.jpg" width="700" />
+
+		<p>In the <b>Porcelain Options &raquo; 
+		General Settings &raquo; Footer &raquo; Footer Layout</b> field
+		you can select the layout for the widgetized area. You can either
+		select the number of columns that this area will contain or you can disable
+		the widgetized area by selecting the "No widgetized footer" option. </p>
+		<p>If you select to display a widgetized area, you can then go to
+		"Appearance" -> "Widgets" to add widgets to the footer. If, for example
+		you have selected a "Three columns" layout, in the Widgets section you
+		will see three widget areas called "Footer Column One", "Footer Column Two"
+		and "Footer Column Three". After this you can drag and drop widgets from
+		the left to any of these three boxes.
+		</p>
+		<p>You can learn more about working with WordPress widgets in <a href="http://wp.tutsplus.com/tutorials/wp-101-video-training-part-12-widgets/">this video tutorial</a>.</p>
+
+	<br/>
+		<h3><a name="footer-copy">c. Copyright and footer menu section</a></h3>
+<hr/>
+
+		<p>The copyright and footer menu section looks like this:</p>
+		<img src="images/copyright.jpg" width="700" /><br/>
+
+		<p>The copyright text section by default displays your blog name.</p>
+
+		<b>Setting the footer menu</b>
+		 <p>Here are the steps you have to follow in order to set the footer menu:</p>
+         <ol>
+         <li>Go to Appearance &raquo; Menus and create a new menu. After you create the menu, you can
+         add Page, Category and custom links from the left. You can watch <a href="http://wp.tutsplus.com/tutorials/wp-101-video-training-part-13-custom-menus/">this video to tutorial</a> to learn more about working
+         with the WordPress Menus functionality.
+         </li>
+         <li>
+
+   
+			<p>To set the menu, click on the "Manage Locations" tab section and select the menu that you have created
+         	in the "Porcelain Theme Footer Menu" field.</p>
+         	<img src="images/set_menu_footer.jpg" alt="" width="550">
+
+		
+         </li>
+         </li>
+     </ol>
+	
+		<br/>
+		<br />
+		<a name="sidebar" ><h2>6. The sidebars<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		
+		
+		 <p>This theme supports multiple sidebars and they are all dynamic. This means that you can insert whatever widgets you like on them. </p>
+  
+  <p>There is one default sidebar that goes to each of the pages. If you would like to have more sidebars than 
+  the default one, then you can create your new sidebars in
+  Porcelain Options &raquo; General &raquo; Sidebars section:</p>
+  
+  <img src="images/create_sidebar.jpg" alt="" width="400"/>
+  
+  <p>
+  To customize your sidebars you have to go in the <b>admin panel &raquo; Appearance &raquo; Widgets</b>. There you should see your sidebars on the right part of the page. Now you can drag and drop widgets from the left into your sidebars. You can learn more about working with WordPress widgets in <a href="http://wp.tutsplus.com/tutorials/wp-101-video-training-part-12-widgets/">this video tutorial</a>.<br />
+  Here is an example of a sidebar:</p>
+  
+  <img src="images/sidebar.jpg" width="260" alt="" />
+
+  <p>You can assign a custom sidebar to each page in the "Page sidebar" field of the Page Settings section. </p>
+  
+	<br/>
+		<a name="sliders" ><h2>7. Sliders<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />	
+		
+
+		
+			<h3><a name="contentslider">a. Content Slider</a></h3><hr />
+
+		<p>The Content Slider looks like this:</p>
+		<img src="images/content_slider.jpg" width="600" />
+		<br />
+
+		<div class="note_box"><p>In addition to the instuctions in this documentation, you can also watch
+		the "Creating a Content Slider" video in the <a href="http://pexetothemes.com/support/knowledgebase/creating-a-home-page-with-porcelain/">Creating a Home page with Porcelain</a>
+		article.</p></div>
+
+		<b><u>Adding slides</u></b><br />
+		<p>In order to add slides to this slider you have to go to the Porcelain &raquo; Content Slider section.
+			For each slide there are different options that you can apply.</p><br/>
+			<img src="images/content_slider_settings.jpg" width="500">
+
+		<ul>
+			<li>
+			<b>Selecting the slide layout</b>
+			<p>You can select the silde layout in the "Slide Layout" field. You can choose between 
+				"Centered text", "Image with text on the left", "Image with text on the right", "YouTube video with text on the left"
+				and "YouTube video with text on the right". Here are examples of how each of these
+				options looks like:</p>
+				Centered Text:<br/>
+				<img src="images/content_slider_centered.jpg" width="400">
+				<br/>Image with text on the left:<br/>
+				<img src="images/content_slider.jpg" width="400">
+				<br/>Image with text on the right:<br/>
+				<img src="images/content_slider_right.jpg" width="400">
+				<br/>YouTube video with text on the left<br/>
+				<img src="images/content_slider_left_video.jpg" width="400">
+				<br/>YouTube video with text on the right<br/>
+				<img src="images/content_slider_video.jpg" width="400">
+			 </li>
+			<li>In the <b>Slide Animation</b> field you can select the animation direction for
+				the slide elements and you can set custom background and text color in the
+				<b>Custom Slide Background Color</b> and <b>Custom Slide Text Color</b> fields</li>
+			<li><b>Setting a background image</b><br/>
+			<p>If you want, you can also set a background image to the slide in the <b>Background Image URL</b>
+				field. You can also set the background image opacity in the <b>Background Image Opacity</b>
+				field.</p>
+			</li>
+			<li><b>Setting the main image</b><br/>
+			You can set a main slide image when one the "Text on the left" or "Text on the right" layouts
+			is selected for the slide - this image is displayed on the side of the text. You can set this image
+			in the <b>Main image URL</b> field.<br/>
+			<img src="images/content_slider.jpg" width="400">
+			<br/>You can also set the slide without this image, it will look like this:<br/>
+
+			<img src="images/content_slider_no_image.jpg" alt="" width="400">
+			</li>
+				<a name="contentslider_custom_settings"></a>
+			<li><b>Custom Background Settings</b> - to each slide you can apply some custom background settings, such as:
+				<ul>
+					<li>Background Image Alignment - please note that the alignment is not fixed and the
+					visible image area still depends on the screen size and ratio </li>
+					<li>Background Style - select the way the background image is displayed:<br/>
+					- Parallax Cover - covers the visible area of the slider with a parallax effect.
+					When the parallax effect is applied, the background image will be resized to cover the
+					entire window size as well, that sometimes (depending on the screen and image size)
+					can make the image look a bit zoomed<br/>
+					- Cover - covers the visible area of the slider with no parallax effect.<br/>
+					- Contain - the image will be resized so that it fits within the slider area - it will be always fully visible with no hidden parts.
+					</li>
+				</ul>
+			</li>
+			<li>In the rest of the fields below you can set some content to the slide, such as titles,
+				description and custom buttons with links.</li>
+		</ul>
+
+		<p>When you set all the slide data, just click on the "Add Item" button to add the slide. </p><br/>
+		
+		<b><u>Changing the slide order</u></b><br />
+		<p>Once you add the images, you can change their order by dragging and dropping the image container
+		to the desired place. After you change their order, in order the new order to be saved, you have to click on
+		the "Save Order" button that would appear right above the images:</p>
+		
+		<img src="images/save_order.jpg" width="550" />
+	<br /><br />
+		<b><u>Creating additional Content Sliders</u></b><br />
+		<p>If you would like to add a new slider with a different image set, you have to click on the "Add new Content slider" button located in the top section of the page and insert its name in the dialog box that will be displayed. After that a section for the additional
+		slider images will be created so that you can set the new images to it.</p>
+		<img src="images/new_content_slider.jpg" width="600" />
+		
+	
+	<br /><br />
+	<b><u>Changing the slider options</u></b><br />
+	<p>You can change the default slider options such as setting automatic image resizing and changing slider speed
+	in the Porcelain Options &raquo; Sliders &raquo; Content Slider section.</p>
+	
+		<p><b>Default/optimal image sizes:</b><br/>
+		- Main (side) image: 569px × 320px . The image height can be changed in the slider options section.<br/>
+		- Background image: There is no specific default/optimal size for the background image - by default
+		the background image is always centered in the visible slider area and how it is displayed depends on the 
+		user's browser window size and the default image ratio. It is
+		recommended to use images that are around 1000 pixels and not bigger than 1500 pixels in size, 
+		so that the page loads faster.</p><br/>
+
+
+		<b><u>Adding a slider to a page</u></b>	
+	<p>You can select the name and type of the slider that you would like to display
+		in a page in the "Page Slider/Header" field of the page settings section (located below
+		the main content editor)</p>
+
+		<img src="images/select_slider.jpg" width="250" />
+
+
+
+		<br/><br/>
+			<h3><a name="nivoslider">b. Nivo Slider</a></h3><hr />
+
+		<p>The Nivo Slider looks like this:</p>
+		<img src="images/nivo_slider.jpg" width="600" />
+		<br />
+
+		<b><u>Adding images</u></b><br />
+		<p>In order to add images to this slider you have to go to the Porcelain &raquo; Nivo Slider section. All you have to do is to upload the selected image (or add its URL), fill the fields
+		with the data you would like to display in the slider and press
+		the "ADD" button. After that the image is automatically saved for the slider.</p>
+		
+		<b><u>Changing the image order</u></b><br />
+		<p>Once you add the images, you can change their order by dragging and dropping the image container
+		to the desired place. After you change their order, in order the new order to be saved, you have to click on
+		the "Save Order" button that would appear right above the images:</p>
+		
+		<img src="images/save_order.jpg" width="550" />
+	<br /><br />
+		<b><u>Creating additional Nivo Sliders</u></b><br />
+		<p>If you would like to add a new slider with a different image set, you have to click on the "Add new Nivo slider" button located in the top section of the page and insert its name in the dialog box that will be displayed. After that a section for the additional
+		slider images will be created so that you can set the new images to it.</p>
+		<img src="images/new_nivo_slider.jpg" width="600" />
+		
+	
+	<br /><br />
+	<b><u>Changing the slider options</u></b><br />
+	<p>You can change the default slider options such as setting automatic image resizing and changing slider speed
+	in the Porcelain Options &raquo; Sliders &raquo; Nivo Slider section.</p>
+	
+		<p><b>Default crop image size:</b> 1500px × 550px . The image height can be changed in the slider
+			options section. Please note that although the images are set in static crop sizes,
+			their display size depends on the browser window size, as the slider is always as wide as the
+			window. Also, if the automatic image resizing is enabled, please make sure to upload
+			images that are bigger than these dimensions, so that they can be cropped to the exact size.
+			For more information about the image resizing, you can refer to the <a href="#auto_resizing">
+			Automatic image resizing/cropping</a> section.</p><br/>
+
+
+	<b><u>Adding a slider to a page</u></b>	
+	<p>You can select the name and type of the slider that you would like to display
+		in a page in the "Page Slider/Header" field of the page settings section (located below
+		the main content editor)</p>
+
+		<img src="images/select_slider.jpg" width="250" /><br/><br/><br/>
+	
+
+
+
+
+
+
+
+
+		
+		<a name="template" ><h2>8. Template Pages<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+
+
+		<br/>
+		<h3><a name="default">a. The Default Page</a></h3>
+		<hr />	
+		<p>When you create a new page from the <b>Pages &raquo; Add New</b> section, 
+			the "Default Template" is assigned to the page by default. The default
+			page template is a standard page template that can be with a sidebar
+			or full-width layout and can contain custom content.</p>
+
+
+		<b><u>Setting the page layout</u></b>
+		<p>For this page you can select the layout to be Right Sidebar, Left Sidebar or Full Width. You can do this by 
+		setting the <a href="#custom">custom field</a> <b>Page Layout</b> of the page:</p>
+		<img src="images/select_page_layout.jpg"  width="400"/>
+		<br/>  
+
+		<b><u>Selecting a sidebar</u></b>
+		<p>By default this page template uses the Default Sidebar. If you would like to use another sidebar, you can create one
+		in the <b>Porcelain Options &raquo; General &raquo; Sidebars</b> section and after that you can set the <a href="#custom">custom field</a> <b>Sidebar</b>
+		and select the sidebar that you have just created. To customize it you have to go to the Appearance &raquo; Widgets and find the
+		selected sidebar. You can drag and drop widgets from the left into it.</p>	
+
+
+			<b><u>Setting a slider/static image to the page:</u></b>
+		<p>You can select the type of header on the page in the <b>Page Slider/Header</b> <a href="#custom">custom field</a> of the page. In this field you can select between Nivo slider, Content slider, Static Header Image and None.
+		<br/><img src="images/select_slider.jpg" width="250"/>
+		<br/>- If you select a slider, you can read about how to create and setup the slider in the 
+		<a href="#sliders">Sliders</a> section.
+		<br />- If you select a Static Image, you can set the static image by setting the image as a 
+		Featured image. <a href="#thumbnail">Here</a> is explained how to do this.</p>
+		<br />
+
+		<b><u>Applying a custom background color and background image to the page header</u></b>
+		<p>You can read about how to apply a custom background color and background image to the page header
+			in the <a href="#header_style">Changing the default background color and image</a> section.</p>
+
+
+
+		<br/>
+		<h3><a name="custom_page">b. Home Page - Full-width custom page template</a></h3>
+		<hr />	
+
+		<p>A page with full-width custom page template can look like this:</p>
+		<img src="images/custom_page.jpg" alt="" width="450"><br/>
+		You can add many sections with different backgrounds and add different elements
+		to all of them.<br/>
+
+		<div class="note_box"><p>In addition to the instuctions in this documentation, you can also watch
+		the videos that we have created in the <a href="http://pexetothemes.com/support/knowledgebase/creating-a-home-page-with-porcelain/">Creating a Home page with Porcelain</a>
+		article.</p></div>
+
+		<br/>
+
+		<b>Creating The Page:</b>
+		<ol>
+		<li>Create a new page (Page &raquo; Add New)</li>
+		<li>In the "Template" field (located in the right sidebar of the edit page section) select
+			"Full-width custom page" template.</li>
+		<li>If you would like to make this page a front page (to be opened by default when the site is visited) go to
+		Settings &raquo; Reading &raquo; Front page displays &raquo; Select "A static page" and select the page that 
+  you have just created in the <b>Front Page</b> list:</p>
+  <img src="images/select_front_page.jpg" width="400" /></li>
+		</ol>
+		  <br />
+
+		<p>Once you create the page, you will have a blank full-width page:</p>
+		<img src="images/home_empty.jpg" alt="" width="450">
+		
+		<p>If you insert standard text content or other elements in the content
+			editor of the page, it will be centered and look like a standard
+			full-width page with no sidebar:</p>
+		<img src="images/home_text.jpg" alt="" width="450">
+
+		<b><u>Creating a background full-width section</u></b>
+		<p>In order to add a background full-width section to the Home page, you can
+			use the "Background Section" button:</p>
+			<img src="images/bg_section.jpg" alt="" width="450">
+
+
+		<p>When you click the button a dialog with various options will be displayed:</p>
+		<img src="images/bg_section_dialog.jpg" alt="" width="550">
+
+		<p>Here are examples of all the default style options for the background section:</p>
+
+		<table class="content">
+			<tr>
+				<td width="50%">
+					<b>Light Background Style</b><br/>
+					<img src="images/bg_section_example.jpg" width="364" alt="" ></td>
+				<td><b>Light Background Style 2</b><br/>
+					<img src="images/bg_section_light_bg2.jpg" width="364" alt=""></td>
+			</tr>
+			<tr>
+				<td>
+					<b>Light Background Style 3</b><br/>
+					<img src="images/bg_section_light_bg_img.jpg" width="364" alt="" ></td>
+				<td><b>Dark Background</b><br/>
+					<img src="images/dark_bg.jpg" width="364" alt=""></td>
+			</tr>
+			<tr>
+				<td>
+					<b>Dark Background Style 2</b><br/>
+					<img src="images/dark_bg_2.jpg" width="364" alt="" ></td>
+				<td></td>
+			</tr>
+
+		</table>
+
+		<p>Additionally you can set a background image to the section in the "Background Image"
+		field and select its opacity in the "Background Image Opacity" field:</p>
+		<img src="images/bg_section_img.jpg" width="500" alt="">
+			
+
+
+
+<br/><br/>
+		<b><u>Adding elements to the page content and the background sections</u></b>
+		<p>In addition to the standard content, there are also many different predefined elements that you can add, such as:
+		<ul>
+			<li>Services Boxes</li>
+			<li>Portfolio Carousel</li>
+			<li>Recent Posts Element</li>
+			<li>Testimonials</li>
+			<li>Call to action section</li>
+			<li>Galleries</li>
+			<li>etc.</li>
+		</ul>
+
+		 You can check the full list
+			of elements and how to add them in the <a href="#elements">Elements</a> section.</p>
+
+<br/><br/>
+				<b><u>Setting a slider/static image to the page:</u></b>
+		<p>You can select the type of header on the page in the <b>Page Slider/Header</b> <a href="#custom">custom field</a> of the page. In this field you can select between Nivo slider, Content slider, Static Header Image and None.
+		<br/><img src="images/select_slider.jpg" width="250"/>
+		<br/>- If you select a slider, you can read about how to create and setup the slider in the 
+		<a href="#sliders">Sliders</a> section.
+		<br />- If you select a Static Image, you can set the static image by setting the image as a 
+		Featured image. <a href="#thumbnail">Here</a> is explained how to do this.</p>
+		<br />
+
+		<b><u>Applying a custom background color and background image to the page header</u></b>
+		<p>You can read about how to apply a custom background color and background image to the page header
+			in the <a href="#header_style">Changing the default background color and image</a> section.</p>
+
+
+	<br />
+		<h3><a name="index">c.Blog page</a></h3>
+		<hr />
+		
+		<b>Creating The Page:</b>
+		<ol>
+		<li>Create a new page (Page &raquo; Add New)</li>
+		<li>Select the "Blog Page" option in the "Template" field (located in the right sidebar of the edit page section</li>
+		<li>If you would like to make this page a front page (to be opened by default when the site is visited) go to
+		Settings &raquo; Reading &raquo; Front page displays &raquo; Select "A static page" and select the page that 
+  you have just created in the <b>Front Page</b> list:</p>
+  <img src="images/select_front_page.jpg" width="400" /></li>
+		</ol>
+		  <br />
+
+
+	  
+  <b><u>Selecting a layout for the page</u></b>
+  <p>You can set the page layout in the "Page Layout" field of the page settings
+  	section:</p>
+  <img src="images/blog_layout.jpg" width="600" />
+	<p>You can choose between the following options:</p>
+	<ul>
+		<li>Left sidebar</li>
+		<li>Right sidebar</li>
+		<li>Full-width - no sidebar</li>
+		<li>Two columns - no sidebar, masonry layout</li>
+		<li>Three columns - no sidebar, masonry layout</li>
+		<li>Two columns with right sidebar, masonry layout</li>
+		<li>Two columns with left sidebar, masonry layout</li>
+	</ul>
+
+  <br/>
+
+  <b><u>Selecting a sidebar</u></b>
+		<p>By default this page template uses the Default Sidebar. If you would like to use another sidebar, you can create one
+		in the <b>Porcelain Options &raquo; General &raquo; Sidebars</b> section and after that you can set the <a href="#custom">custom field</a> <b>Sidebar</b>
+		and select the sidebar that you have just created. To customize it you have to go to the Appearance &raquo; Widgets and find the
+		selected sidebar. You can drag and drop widgets from the left into it.</p>	
+  
+   <br/>
+  
+  <b><u>Excluding categories from the blog</u></b>
+  <p>You can exclude categories in the "Exclude posts from categories" field.</p>
+  <img src="images/exclude_cat.jpg" width="200" />
+  <p>The categories that you uncheck will be excluded from the blog page.</p>
+  <br/>
+  
+   <b><u>Defining the number of posts on the blog</u></b>
+  <p>In the "Number of posts per page" field of the blog page settings section
+  	you can set the number of posts to display on that page.
+  </p>
+
+
+  
+		<b><u>Setting a slider/static image to the page:</u></b>
+		<p>You can select the type of header on the page in the <b>Page Slider/Header</b> <a href="#custom">custom field</a> of the page. In this field you can select between Nivo slider, Content slider, Static Header Image and None.
+		<br/><img src="images/select_slider.jpg" width="250"/>
+		<br/>- If you select a slider, you can read about how to create and setup the slider in the 
+		<a href="#sliders">Sliders</a> section.
+		<br />- If you select a Static Image, you can set the static image by setting the image as a 
+		Featured image. <a href="#thumbnail">Here</a> is explained how to do this.</p>
+		<br />
+
+		<b><u>Applying a custom background color and background image to the page header</u></b>
+		<p>You can read about how to apply a custom background color and background image to the page header
+			in the <a href="#header_style">Changing the default background color and image</a> section.</p>
+
+    <b><u>Setting advanced blog pagination</u></b><br/>
+    
+    <img src="images/wppagenavi.jpg" width="150" />
+    <p>In order to have advanced pagination enabled on your blog page (as on the screenshot above) you have
+    to install the WP-Pagenavi plugin. You can read more about how to do it the section
+    <a href="#widgets">Plugins included</a>.</p>
+  <br/><br/>
+  
+  <b><u>The blog posts</u></b>
+  <br/><br/>
+
+    <b><u>Selecting a format for the post</u></b>
+    <p>The posts support the following formats: Standard, Gallery, Video, Aside and Quote.
+    	The format can be selected in the "Format" section of the post:
+<br/><img src="images/post_format.jpg" alt="" width="250"/>
+<br/>Here is an explanation about each of the supported formats:<br/>
+<ul>
+	<li><b>Standard</b> - includes a featured image in the beginning of the post. It looks like this:
+  <img src="images/standard_post.jpg" width="400" />
+<br/>
+	You can read <a href="#thumbnail">here</a> about how to set a featured image to the post.</li>
+	<li><b>Gallery</b> - displays the image attachments of the post in a slider
+		in the beginning of the post. It looks like this:
+ <img src="images/gallery_post.jpg" width="400" />
+<br/>
+	<br/><b>Adding images</b>
+	In order to add images as attachments to the post you have to click on the
+	"Add Media" button located above the content editor of the post:<br/>
+	<img src="images/add_media.jpg" alt="" width="200" /><br/>
+	then
+	upload the images in the dialog window that is opened. All  the images that
+	you upload from the post will automatically become attachments of the post.
+	You don't have to insert the images into the content of the post, they only
+	have to be uploaded from this post's media window. If later you would like to
+	edit these images, you can again click on the "Add Media" button and then
+	you have to select the "Uploaded to this post" option in the filter:
+	<img src="images/post_attachments.jpg" alt="" width="400" /><br/>
+	You can also apply different slider settings, such as animation settings, image
+	resizing, etc. in the <b>Porcelain Options &raquo; Slider Settings &raquo;
+	Slider as post gallery</b> section.
+	</li>
+	<li><b>Video</b> - will display a video as header of the post. It looks like this:
+   <img src="images/video_post.jpg" width="400" />
+<br/>
+ You can set the video URL in the "Video URL" custom field of the post. The theme uses the WordPress [embed] shortcode to insert the video, you can see the supported formats on the <a href="http://codex.wordpress.org/Embeds">WordPress Embeds</a> page. We have also included support for Flash videos (with .swf extension).</li>
+	<li><b>Aside</b> - displays a box with text only (the content of the post). It
+		doesn't include any post information, such as titles, images, etc. It looks like this:<br/>
+<img src="images/aside_post.jpg" width="400" />
+<br/></li>
+	<li><b>Quote</b> - displays the post content in a quote style. It looks like this:<br/>
+<img src="images/quote_post.jpg" width="400" />
+<br/></li>
+</ul>
+
+
+   <b><u>Hiding part of the content of the post with the "Read More" link:</u></b>
+   <p>Just before the text that you want to be hidden you have to click on the "Insert more tag" button (Alt+Shift+T):
+   </p>
+   <img src="images/more.jpg" width="450"/><br/>
+   
+   <b><u>Enabling threaded comments (with reply functionality):</u></b>
+ <p>In order to enable threaded comments, you have to go to <b>Settings &raquo; Discussion</b> and check the
+ field "Enable threaded (nested) comments x levels deep"</p>
+<br/>
+
+  <b><u>Post Options</u></b>
+  <p>There is a blog posts option included in the <b>Porcelain Options &raquo;
+  	Post and Page settings &raquo; Blog Posts</b> section. In this 
+  	section you can set some options such as selecting the default single post layout, single post sidebar
+  	what info to display for the post (e.g. date, category, etc.).</p>
+
+
+
+
+
+
+
+<br/><br/><br/>
+		
+		<h3><a name="grid_gallery">d. Portfolio Gallery Page</a></h3>
+		<hr />
+
+		<p>The Gallery page looks like this</p>
+		<img src="images/portfolio_gallery.jpg" width="550"/>
+
+		
+		 <b><u>Main setup instructions</u></b>
+		 <p>In this section are included the main steps you would have to follow in order to set this page, more options
+		 and settings are described in the "Other Gallery Page Options" section below.</p>
+		 
+		<b>Creating The Page:</b>
+		<ol>
+		<li>Create a new page (Page &raquo; Add New)</li>
+		<li>Select "Portfolio Gallery" in the "Template" field (located in the right sidebar of the edit page section</li>
+		<li>If you would like to make this page a front page (to be opened by default when the site is visited) go to
+		Settings &raquo; Reading &raquo; Front page displays &raquo; Select "A static page" and select the page that 
+  you have just created in the <b>Front Page</b> list:</p>
+   <img src="images/select_front_page.jpg" width="400" /></li>
+		</ol>
+		  <br />
+		  
+		  
+		<b><u>Creating the portfolio/gallery items (adding images to the gallery)</u></b>
+		<br /><img src="images/portfolio_item.jpg" width="250" alt="" /><br />
+		Each of the images in the gallery represents a single Portfolio Item. For each of the portfolio items:
+		<ol>
+		<li><b>Creating new items</b><br/>
+			You can create a new item in <b>"Portfolio" &raquo; Add New</b> section. You can set the title in the "Title" field of the item.</li>
+		<li><b>Add Images to the item</b><br />
+
+<ol>		
+	<li>Click on the "Add Media" button above the main content area of the portfolio item:<br/>
+	<img src="images/add_media.jpg" width="200" />
+	</li>
+	<li>Open the "Create Gallery" section. If you would like to upload new images click on the
+		"Upload Files" tab and upload the images. If you would like to add existing Media Library
+		images, click on the "Media Library" tab and select the images you like. After you select
+		the images, click on the "Create a new gallery" button.<br/>
+	<img src="images/media_images.jpg" width="600" />
+	</li>
+	<li>After this when you click on each image in the gallery, in its Caption field you can set a description to it. You can also change the default image order by dragging and dropping the images on different positions.
+	</li>
+	<li>When you finish editing the images Click on the "Insert Gallery" button. This will insert a gallery
+		object into the content section of the portfolio item.</li>
+	<li>Later if you would like to edit the images, click on the gallery object and click on its "Edit Gallery"
+		button:
+		<br/> <img src="images/edit_gallery.jpg" width="500" />
+	</li>
+	</ol>
+</li>
+		<li><b>Setting the thumbnail of the item</b>
+			<p>By default the first image of the images you have added will be used as the item's thumbnail. If you would like to set another image as thumbnail, you have to set it as featured image to the item. You can read about how to set a featured image <a href="#thumbnail">here</a>.
+			</p>
+			<p>As the images uploaded would be bigger, the thumbnail image will be resized automatically to the size in which it should be displayed. However, if you prefer to use your custom thumbnail image,
+				you can set it in the "Custom Thumbnail URL" field of the item.</p>
+			
+		</li>
+		<li><b>Selecting the type of the item</b>
+		<p>Each portfolio item supports different formats in which it can be displayed. You can select the type of the item in the "Item Type" field:<br/>
+			<img src="images/portfolio_type.jpg" alt="" width="200"/><br/>
+			Here is an explanation for each of the item type options:</p>
+			<ul>
+				<li><b>Slider with side description / Full-width slider</b>
+				<br/>These two options display the same type of content, but in a 
+				different layout. The slider with side description displays a
+				slider of images and a description on the side and the full-width
+				slider displays a full-width slider with a description located
+				below it:<br/>
+				<table class="content">
+					<tr>
+						<td>
+							<b>Slider with side description</b><br/>
+							<img src="images/slider_item.jpg" width="320" alt=""></td>
+						<td><b>Full-width slider</b><br/>
+							<img src="images/slider_item_full.jpg" width="320" alt=""></td>
+					</tr>
+				</table>
+				<br/>
+				<p>You can read about how to add the images to the slider in the
+					"Add images" section above.</p>
+				<p>The slider description is the actual post content - the content
+					that you insert in the portfolio post content editor area
+					will be displayed as a description to the item.</p>
+					<b>Slider options</b>
+					<p>You can change the default slider options in the
+					<b>Porcelain Options &raquo; Slider Settings &raquo;
+					Portfolio Slider</b> section. In this section
+					you can select whether the images to be automatically resized
+					or not and select whether to display a related projects
+					carousel below the slider and you can also customize the default
+					carousel options.</p>
+				</li>
+				<li><b>Lightbox</b> <br/>
+					<p>If you select this option the images of the item in the Grid Gallery will be displayed lightbox:</p>
+					<img src="images/lightbox.jpg" width="400" alt="">
+				<br/>
+			<!-- <img src="images/lightbox.jpg" alt="" /><br/> -->
+			With this type selected, the single portfolio item page will automatically include a Quick gallery with option to open the images in lightbox.
+			<b>Setting a single preview image per item</b>
+			<p>By default the lightbox items are designed to display albums of 
+				images - each items displays a set of images in the lightbox.
+				However if you would like to have only one preview image per
+				item and have all the lightbox images in the gallery page
+				related in a group, so that when you click on the first item's
+				image and then click on the "Next" arrow of the lightbox, the
+				second item's image will be displayed, you can enable the
+				"Make lightbox items preview images related to each other" option
+				in the gallery page settings section.
+			</p>
+	
+		</li>
+				<li><b>Standard Page</b><br/>
+				<p>The item will be displayed in a standard page format. In the 
+				<b>Porcelain Options &raquo; Post and Page Settings &raquo; Portfolio Posts</b>
+				 section you can select the layout and sidebar for the page.</p>
+				</li>
+				<li><b>Video with side description / Full-width video</b>
+				<p>Displays a video either in a full-width layout or with a side
+					description. You can set the video URL in the "Video URL" custom field of the portfolio item. The theme uses the WordPress [embed] shortcode to insert the video, you can see the supported formats on the <a href="http://codex.wordpress.org/Embeds">WordPress Embeds</a> page. We have also included support for Flash videos (with .swf extension).</p>
+				</li>
+				<li><b>Custom Link</b>
+					<p>The item will be linking to a custom link that you have set in the
+  				<a href="#custom">custom field</a> "Custom Link URL" of the item</p></li>
+			</ul>
+		</li>
+		</ol>
+<br/>
+	<b><u>Ordering the items in the gallery</u></b>
+	<p>You can select how the items will be ordered in the "Order items by" and 
+		"Order" fields of the gallery page settings section:</p>
+		<img src="images/order_items.jpg" alt="" width="200">
+	<p>The default options are set to order the items by date in a descending order.
+		This means that the newest items will be displayed first. You can also select
+		the items to be ordered by "Custom order". In this case, you can set an
+		order number to the portfolio item in its "Order" field. We have also
+		created a <b>Portfolio &raquo; Custom Order</b> page where you can
+		easily drag and drop the portfolio items to reorder them: </p>
+		<img src="images/items_reorder.jpg" alt="" width="350">
+		
+		<br /><br />
+	 <b><u>Other Gallery Page Options</u></b>	
+	 <p>The gallery page includes some customization options in its settings section
+	 	which is located below the main content editor of the page.</p>
+	<ul>
+	<li><b>Exclude categories from the page</b> 
+		<p>You can exclude categories in the "Exclude items from portfolio categories" field 
+			by unchecking the categories that
+			you would like to exclude.</p></li>
+
+	<li><b>Show/hide the category filter</b> 
+		<p>You can disable/enable the category filter within the "Show portfolio category filter" 
+		field</p></li>
+	<li><b>Set the number of items to be displayed per page</b>
+		<p>You can set the number of items that will be displayed per page in the 
+			"Number of portfolio items per page" field</p></li>
+	<li>
+		<b>Change the number of columns</b>
+		<p>You can change the number of columns in the "Number of columns" field</p>
+	</li>
+
+	<li><b>Change the image layout</b>
+		<p>You can enable a Masonry layout in the "Masonry layout" field. If you 
+			enable this option, the images height will vary depending on the original
+			image ratio and also the images will be positioned one below another
+			by filling all the space. If the "Masonry layout" option is disabled,
+			you can set the image height in the "Thumbnail image height" field.</p>
+	</li>
+	</ul>	
+		
+	
+
+	<br/><br/>
+	
+	
+	<br/>
+	<h3><a name="quick_gallery">e. Quick/Easy Gallery page</a></h3>
+		<hr />	
+		
+		
+	<p>This is the default WordPress image gallery - the purpose of this gallery is to insert multiple images at once - you can very quickly create multiple galleries just for
+	several minutes. Here is how the gallery looks like:</p>
+	<img src="images/quick_gallery.jpg" width="450" /><br/>
+	
+<p><b>In order to create a quick gallery you have to:</b></p>
+	<ol>
+	<li>Create a new page (you don't have to set a page template to it)</li>
+	<li>Click on the "Add Media" button above the main content area:<br/>
+	<img src="images/add_media.jpg" width="200" />
+	</li>
+	<li>Open the "Create Gallery" section. If you would like to upload new images click on the
+		"Upload Files" tab and upload the images. If you would like to add existing Media Library
+		images, click on the "Media Library" tab and select the images you like. After you select
+		the images, click on the "Create a new gallery" button.<br/>
+		<img src="images/media_images.jpg" width="600" />
+	</li>
+	<li>After this when you click on each image in the gallery, you can set a caption that will be
+		displayed below the image thumbnail in the "Caption" field and also you can set
+		a description that will be displayed in the lightbox preview in the "Description" field
+		of the image.
+	</li>
+	<li>Use the "Gallery Settings" section to change the gallery settings:
+	<br /><img src="images/gallery_settings.jpg" width="200" />	
+	<br />In the "Link to" select "Media File" and in the "Gallery Columns" field select the number of
+	columns you would like to display.<br />
+	Click on the "Insert Gallery" button.
+	</li>
+	</ol>
+
+	<b><u>Gallery Options</u></b>
+	<p>The quick gallery options section can be found in <b>Porcelain Options
+		&raquo; Media Settings &raquo; Quick Gallery</b> section.
+		For the different post types (post / page / portfolio) you can 
+		enable/disable the masonry layout and if the masonry layout is
+		disabled you can set a default static height to the thumbnail images.</p>
+	
+	
+	
+	
+
+	
+	
+	
+	<br/>
+	<h3><a name="contact">f. Contact Form page</a></h3>
+		<hr />		
+		
+		
+	  The contact form page looks like this:<br /><br/>
+  <img src="images/contact.jpg" width="300" alt="" /><br /><br />
+  
+  <p>This page contains an AJAX contact form which visitors of your website can use to contact you.</p>
+  <p> To make one page contain a contact form you have to do some settings. When you create (or edit)
+  your page, you should find the field <b>Template</b> and in it to choose the <b>Contact form page</b> option. After that immediately your
+  page will contain a contact form.</p>
+
+  	<b><u>Setting your e-mail address</u></b>
+	<p>You can set the e-mail address to which to send the messages in the 
+		<b>Porcelain Options &raquo; General Settings &raquo; Contact Form</b>
+		section.</p>
+
+		<a name="contact_dmarc"></a>
+	<b><u>Setting a sender e-mail address</u></b>
+
+	<p>You can set the e-mail address to which to send the messages in the 
+		<b>Porcelain Options &raquo; General Settings &raquo; Contact Form &raquo; Email sender</b>
+		field.</p>
+		<div class="error">Important: Please make sure to set a sender email address to avoid messages sent
+		by users using a Yahoo email address failing to be sent.</div>
+	<p>Yahoo has recently published a DMARC policy of reject, meaning that all the emails that are sent from Yahoo emails, but not from the Yahoo servers, should be rejected by the email providers.
+This means that if your site visitor sets a Yahoo email and this email is set as a sender, you may not be able to receive the email (depending on the email provider that you use to receive the messages).
+Therefore, please make sure to set your custom email address in this field (such as noreply@domain.com, non-Yahoo address), so that you can make sure that you will receive all the emails from Yahoo users.</p>
+
+	<b><u>Setting CAPTCHA</u></b>
+	 <p>Having CAPTCHA enabled for your form will prevent sending spam emails by robots, just by printing an image with text and asking the user to fill the text from the image.</p>
+   <img src="images/recaptcha.jpg" width="300" alt="" /><br/>
+   <p>We have used the <a href="http://www.google.com/recaptcha">reCAPTCHA service</a>. In order to enable reCAPTCHA for the theme you have to do the following settings:</p>
+   <ul>
+   	<li>Select "ON" in the "Enable CAPTCHA" field of the <b>Porcelain Options &raquo; General Settings &raquo; Contact Form</b></li>
+   	<li>Register an API key and set your generated public and private keys in the "reCAPTCHA Public Key" and "reCAPTCHA Private Key" fields of the <b>Porcelain Options &raquo; General Settings &raquo; Contact Form</b>.<br/>
+   	You can very easily generate these keys <a href="https://www.google.com/recaptcha/admin#list">here</a>. After you click on the "Sign Up" button, you will be redirected to a page where you would need to have a Google account in order to log in. If you don't have a Google account, you can create one by clicking on the "Sign Up" button on the new page that is opened. After you log in, you will be able to generate the API keys for your site. </li>
+   </ul>
+ 
+		<b><u>Setting the page layout</u></b>
+		<p>For this page you can select the layout to be Right Sidebar, Left Sidebar or Full Width. You can do this by 
+		setting the <a href="#custom">custom field</a> <b>Page Layout</b> of the page:</p>
+		<img src="images/select_page_layout.jpg"  width="400"/>
+		<br/>  
+
+		<b><u>Selecting a sidebar</u></b>
+		<p>By default this page template uses the Default Sidebar. If you would like to use another sidebar, you can create one
+		in the <b>Porcelain Options &raquo; General &raquo; Sidebars</b> section and after that you can set the <a href="#custom">custom field</a> <b>Sidebar</b>
+		and select the sidebar that you have just created. To customize it you have to go to the Appearance &raquo; Widgets and find the
+		selected sidebar. You can drag and drop widgets from the left into it.</p>	
+
+
+		<b><u>Setting a slider/static image to the page:</u></b>
+		<p>You can select the type of header on the page in the <b>Page Slider/Header</b> <a href="#custom">custom field</a> of the page. In this field you can select between Nivo slider, Content slider, Static Header Image and None.
+		<br/><img src="images/select_slider.jpg" width="250"/>
+		<br/>- If you select a slider, you can read about how to create and setup the slider in the 
+		<a href="#sliders">Sliders</a> section.
+		<br />- If you select a Static Image, you can set the static image by setting the image as a 
+		Featured image. <a href="#thumbnail">Here</a> is explained how to do this.</p>
+		<br />
+
+		<b><u>Applying a custom background color and background image to the page header</u></b>
+		<p>You can read about how to apply a custom background color and background image to the page header
+			in the <a href="#header_style">Changing the default background color and image</a> section.</p>
+
+	
+	<br/>
+	<h3><a name="archive">g. Archive page</a></h3>
+		<hr />
+
+		<p>The archive page displays an archive of the blog posts by
+			category, month and a list with the posts.</p>
+		<img src="images/archive.jpg" width="400" alt="">
+
+		<p>To create an archive page you have to create a new page (Page &raquo; Add New)
+			and select the "Archive" option in the "Template" field of the page
+			(located in the right sidebar of the edit page screen)</p>
+
+				<b><u>Setting the page layout</u></b>
+		<p>For this page you can select the layout to be Right Sidebar, Left Sidebar or Full Width. You can do this by 
+		setting the <a href="#custom">custom field</a> <b>Page Layout</b> of the page:</p>
+		<img src="images/select_page_layout.jpg"  width="400"/>
+		<br/>  
+
+		<b><u>Selecting a sidebar</u></b>
+		<p>By default this page template uses the Default Sidebar. If you would like to use another sidebar, you can create one
+		in the <b>Porcelain Options &raquo; General &raquo; Sidebars</b> section and after that you can set the <a href="#custom">custom field</a> <b>Sidebar</b>
+		and select the sidebar that you have just created. To customize it you have to go to the Appearance &raquo; Widgets and find the
+		selected sidebar. You can drag and drop widgets from the left into it.</p>	
+  <br />
+
+  <b><u>Applying a custom background color and background image to the page header</u></b>
+		<p>You can read about how to apply a custom background color and background image to the page header
+			in the <a href="#header_style">Changing the default background color and image</a> section.</p>
+		
+	
+
+  	 
+  	 <br/>
+
+
+<br/>
+		<a name="elements" ><h2>9. Elements<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+
+		<h3><a name="services">a. Services boxes</a></h3>
+	<hr>
+
+	<p>There are 4 styles of services boxes included. Here are some examples:</p>
+
+	<table class="content">
+		<tr>
+			<td><b>Default style</b><br/>
+			<img src="images/services_default.jpg" width="364" alt="">
+			 </td>
+			<td><b>Circle style</b><br/>
+			<img src="images/services_circle.jpg" width="364" alt="">
+			</td>
+		</tr>
+		<tr>
+			<td><b>Boxed Photo style</b><br/>
+			<img src="images/services_boxed_photo.jpg" width="364" alt="">
+			 </td>
+			<td><b>Boxed Icon style</b><br/>
+			<img src="images/services_boxed_icon.jpg" width="364" alt="">
+			</td>
+		</tr>
+
+	</table>
+
+	
+	<b><u>Creating Services Boxes</u></b>
+		<p>You can create the services boxes in the <b>Porcelain &raquo; Services
+			Boxes</b> section.</p>
+		<p>By default there is a "Default" services boxes set created where you 
+			can add the boxes. For each box you can add a Title, Image, Link and 
+			Description:</p>
+			<img src="images/add_services.jpg" alt="" width="500">
+	
+		<p>You can create many different services box sets and include them
+			in different sections of the pages and posts. To create a new
+			Services boxes set just click on the "Add New Services Box Set"
+			button in the top right section of the window.</p>
+
+		<br/>
+
+		<br/><br/>
+		<b><u>Adding the Services Boxes to the page</u></b>
+		<p>In order to add a services boxes set to a page/post, just click
+			on the "Insert Services Boxes" button from the editor buttons:</p>
+			<img src="images/add_services_btn.jpg" alt="" width="480">
+
+		<p>Then a dialog will be displayed where you can set the options
+			for the services boxes set:</p>
+			<img src="images/services_dialog.jpg" alt="" width="600">
+
+
+		<p>In this dialog you can set:</p>
+		<ul>
+			<li>The services boxes set to display. By default there is a 
+			"Default" set created, however if you would like to create additional
+			sets of boxes, you can do this in the <b>Porcelain &raquo; Services
+			Boxes</b> section, by clicking on the "Add a New Services Box Set"
+			button (located in the top right section of the page)</li>
+			<li>Services Layout - select the layout/style of the services</li>
+			<li>In the "Number of columns" field you can select the number
+				of boxes to display per row</li>
+			<li>Parallax animation on display - if enabled, each of the services
+				boxes will be animated with a parallax animation when the user
+				scrolls to the services set.</li>
+			<li>In the "Services title" field you can select the title
+				for the services box set. If you insert a title, it will
+				be displayed on above the boxes in the list style boxes and on the 
+				left of the boxes with the rest of the styles.</li>
+			<li>In the "Services description" field you can select the description
+				for the services box set. If you insert a description, it will
+				be displayed on the left of the boxes</li>
+			<li>If you would like to add a link (for example a "Read more" link)
+				in the Description section of the services set, you can setup the link
+				data in the "Description Link URL" and "Description Link Text" fields
+				of the dialog.</li>
+		</ul>
+
+
+
+
+		<h3><a name="carousel">b. Portfolio Carousel</a></h3>
+	<hr>
+	<p>The portfolio carousel displays a set of portfolio items. You can read about how to create
+		portfolio items and all the options that you can set to them in the
+		"Creating the portfolio/gallery items" section of the <a href="#grid_gallery">Portfolio Gallery</a>
+		template section.</p>
+
+		<img src="images/carousel.jpg" width="600" alt="">
+
+		<p>You can insert a carousel anywhere in the content of your pages or posts
+			by using the "Insert Portfolio Carousel" button of the editor buttons:</p>
+			<img src="images/insert_carousel.jpg" alt="" width="480">
+
+		<p>In the dialog that will be opened you can choose the portfolio category
+			to display, set a title and setup the ordering options. The carousel
+			will be added as a shortcode in the content of the post/page.</p>
+		<br/>
+
+		<br /><hr/>
+
+
+		<h3><a name="posts_element">c. Recent Blog Posts Element</a></h3>
+	<hr>
+
+	<p>The recent blog posts element supports two main layouts:</p>
+
+	<b>Column layout - 2, 3 or 4 columns:</b><br/>
+
+			<img src="images/blog_posts_element.jpg" alt="" width="550">
+<br/><br/>
+	<b>List layout:</b><br/>
+
+			<img src="images/blog_post_element_list.jpg" alt="" width="550">
+
+	<p>You can insert the blog posts element anywhere within the content of the pages
+		or posts, by using the "Recent Blog Posts" button of the editor buttons:</p>
+
+		<img src="images/insert_blog_posts.jpg" alt="" width="480">
+
+
+	<br/><b>Creating a Featured Posts section</b><br/>
+	<p>You can create a Featured Posts section by following these steps:</p>
+	<ul>
+		<li>Create a Featured category</li>
+		<li>Assign your featured posts to that category</li>
+		<li>When inserting the Recent Blog Posts element, select your Featured
+			category in the "Show posts from category" field.</li>
+	</ul>
+
+	<br /><hr/>
+
+		
+
+	
+		<h3><a name="testimonials">d. Testimonial Slider</a></h3>
+	<hr>
+
+	<img src="images/testimonials.jpg" width="500" alt="">
+
+	<b><u>Creating the testimonials</u></b>
+		<p>You can create the services boxes in the <b>Porcelain &raquo; Testimonials</b> section.</p>
+		<p>By default there is a "Default" services testimonials set created where you 
+			can add the your testimonials. </p>
+
+		<img src="images/add_testimonial.jpg" width="400" alt="">
+	
+		<p>You can create many different testimonial sets and include them
+			in different sections of the pages and posts. To create a new
+			testimonials set just click on the "Add New Testimonials Set"
+			button in the top right section of the window. </p>
+
+		<br/>
+
+		<br/><br/>
+		<b><u>Adding the testimonial slider to the page</u></b>
+
+		<p>You can insert a testimonial anywhere within a page/post by using the
+			"Testimonial Slider" button of the content editor buttons</p>
+	<img src="images/insert_testimonial.jpg" alt="" width="480"><br/><br/>
+	<p>In the "Select testimonials set" field you can select a specific set of
+		testimonials to show on the testimonial slider.</p>
+
+
+	<br/><br/><br /><hr/>
+	<h3><a name="cta">e. Call to action circle</a></h3>
+	<hr>
+
+	<img src="images/cta.jpg" width="500" alt="">
+
+		<p>You can insert a call to action circle anywhere within a page/post by using the
+			"Circle call to action section" button of the content editor buttons</p>
+	<img src="images/insert_cta.jpg" alt="" width="480"><br/><br/>
+	<p>Please note that this circle is with a static size and it is designed to fit
+		short titles only.</p>
+
+	
+
+
+	<br/><br/><hr/>
+	<h3><a name="nivo_content">f. Nivo slider in page/post content</a></h3>
+	<hr>
+
+	<img src="images/nivo_content.jpg" width="500" alt="">
+
+		<p>You can insert a Nivo slider anywhere within a page/post by using the
+			"Insert Nivo Slider" button of the content editor buttons</p>
+	<img src="images/insert_nivo_content.jpg" alt="" width="480"><br/><br/>
+	<p>If you insert a Nivo slider into the content of a Full-width custom page template,
+		the slider will be displayed in a full-width size, for the rest of the pages
+		and posts, the slider will be set to fit the width of the content container
+		element of the page/post.</p>
+
+	<p>You can create different sliders within the Porcelain Options -> Nivo Slider section.
+		You can learn more about creating sliders in the <a href="#nivoslider">Nivo Slider</a> section.</p>
+
+	<p>You can also apply different options such as image cropping, animation settings, etc. in the
+		Porcelain Options -> Slider Settings -> "Nivo in content" section.</p>
+
+
+	<br/><br/><hr/>
+	<h3><a name="pricing">g. Pricing Tables</a></h3>
+	<hr>
+	<img src="images/pricing.jpg" width="650" alt="" />
+
+<b><u>Creating the Pricing Tables</u></b>
+		<p>You can create pricing tables in the <b>Porcelain &raquo; Pricing Tables</b> section.</p>
+		<p>By default there is a "Default" Pricing Table set created where you 
+			can add your Pricing Table items. </p>
+			<p>When adding a pricing table item you can make it highlighted by selecting
+				the "Highlight" option in the "Item Style" field.</p>
+
+		<p>You can create many different pricing tables and include them
+			in different sections of the pages and posts. To create a new
+			Pricing Table just click on the "Add New Pricing Table"
+			button in the top right section of the window. </p>
+
+		<br/>
+
+		<br/><br/>
+		<b><u>Adding the pricing table to the page</u></b>
+
+		<p>You can insert a pricing table anywhere within a page/post by using the
+			"Pricing Table" button of the content editor buttons</p>
+	<img src="images/insert_pricing.jpg" alt="" width="480"><br/><br/>
+	<p>In the "Select a pricing table" field you can select a specific
+		Pricing Table to show.</p>
+	<p>In the pricing table dialog you can also select the number of columns to set to
+		the pricing tables and a custom highlight color.</p>
+
+
+
+	<br/><br/><hr/>
+	<h3><a name="sharing">h. Social Sharing Buttons</a></h3>
+	<hr>
+		
+	<p>The theme includes sharing buttons for the main social network sites:
+			Facebook, Twitter, Google+ and Pinterest . These buttons can be enabled
+			on posts, pages, portfolio posts and portfolio post sliders.</p>
+			<img src="images/share.jpg" width="160" alt="">
+		<p>You can configure the how and where the buttons will be displayed
+			in the <b>Porcelain Options &raquo; General Settings &raquo;
+			Social &raquo; Social Sharing Buttons</b> section.</p>
+
+	
+	<br/><br/><hr/>
+	<h3><a name="accordion">i. Accordion</a></h3>
+	<hr>
+
+	<p>The Accordion looks like this:</p>
+		
+<img src="images/accord.jpg" width="550" alt="">		
+<p>You can add an accordion by using the Accordion shortcode:</p>
+		<pre name="code" class="html">
+		[accordion][apane title="First Pane"]Pane One Content[/apane] [apane title="Second Pane"]Pane Two Content[/apane] [apane title="Third Pane"]Pane Three Content[/apane][/accordion]
+		</pre>
+		<b>Note:</b> Please make sure that all the shortcode tags are on the same line, but separated with at least
+		a space, for example:</p>
+		
+		<pre name="code" class="html">
+		... [apane]Tab One Content[/apane] [apane]Tab Two Content[/apane] ...
+		</pre>
+		<br/>
+		
+		<br/><br/><hr/>
+	<h3><a name="tabs">j. Tabs</a></h3>
+	<hr>
+		<img src="images/tabs.jpg" width="550" alt="" />
+		<p>You can add a tabs element by using the tabs shortcode:</p>
+		<pre name="code" class="html">
+		[tabs titles="Title One, Tab Two, Tab Three"][pane]Tab One Content[/pane] [pane]Tab Two Content[/pane] [pane]Tab Three Content[/pane][/tabs]
+		</pre>
+		
+		<b>Note:</b>Please make sure that all the shortcode tags are on the same line, but separated with at least
+		a space, for example:</p>
+		
+		<pre name="code" class="html">
+		... [pane]Tab One Content[/pane] [pane]Tab Two Content[/pane] ...
+		</pre>
+		<br />
+
+		<br/><br/><hr/>
+	<h3><a name="contact_form">k. Sidebar Contact Form</a></h3>
+	<hr>
+		<p>The sidebar contact form looks like this:</p>
+		<img src="images/sidebar_contact.jpg" width="250" alt="">		
+		
+		<p>You can insert this contact form in the sidebar or footer section just by using the WordPress <b>Text</b> widget and
+		inserting the following shortcode into it:</p>
+		
+		<pre name="code" class="html">
+		[contactform]
+		</pre>
+		
+		You can set the email to which to send the messages in the Porcelain Options &raquo; Page Settings &raquo; Contact section.
+		
+
+		<br/><br/><hr/>
+	<h3><a name="formatting_buttons">l. Other editor buttons</a></h3>
+	<hr>
+
+	<img src="images/formatting_buttons.jpg" width="480" alt="" />
+		
+		<p>In addition to the elements mentioned above, there is also a set of other editor element buttons, such as:</p>
+		<ul>
+			<li>Styled headings</li>
+			<li>Text highlights</li>
+			<li>Drop caps</li>
+			<li>Styled lists</li>
+			<li>Quick Image Upload</li>
+			<li>Lightbox image</li>
+			<li>Info boxes - info / error / note / tip</li>
+			<li>Buttons</li>
+			<li>Columns - 2, 3 and 4 columns</li>
+			<li>Videos - YouTube / Vimeo / Flash</li>
+		</ul>
+
+<br/>
+	<br /><hr/>
+	<h2><a name="styles">10. Changing the theme style</a></h2>
+		<hr />
+		<p>All the theme style options are located in the Porcelain Options &raquo; <b>Styles</b> section</p>		
+		<img src="images/styles.jpg" alt="" width="400">
+
+		 <b><u>Changing the accent color:</u></b>
+		<p>The accent color is the primary theme elements color, which is applied 
+			as background or text color to different elements, such as the main
+			title area of the page, hover on images and links, some titles, etc.
+			We have added several predefined color options in the "Predefined Accent Color"
+			section, but you can also pick a custom color in the "Custom Accent Color" section.</p>
+		
+		<br/>
+		 <b><u>Other style options</u></b>
+		<p>The "General" tab of the Styles section contains some general style settings,
+			such as the main accent color, body background and general header style settings.
+			You can also apply custom styles and colors to the rest of the elements in the 
+			"Content" and "Footer" tabs of the Styles section.
+			You can also read more about how to set the fonts in the
+			<a href="#fonts">Fonts</a> section.</p>
+<br/>
+
+	 <b><u>Additional Styles Section</u></b>
+		<p>If you would like  to make CSS modifications to the theme's style,
+			you can insert the additional CSS changes into the the Porcelain Options &raquo; 
+			Style Settings &raquo; Additional Styles. It is recommended not to edit the
+			style.css file, as this file will be reset to default once you update the theme
+			and you will loose your CSS modifications. Another option to safely make
+			CSS modifications is by creating a WordPress child theme. You can read
+			more about creating child themes <a href="http://codex.wordpress.org/Child_Themes">here</a>.</p>
+		
+		
+		<br/><br/><br/>
+		
+		
+		<a name="fonts" ><h2>11. Fonts<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />	
+
+		<p>By default the theme uses the "Open Sans" (for the body text) and "Oswald" (for the headings) Google fonts.</p>
+		
+		<p>All the fonts settings can be applied in the Porcelain Options &raquo; Style settings &raquo; Fonts section.</p>
+
+
+		<p>This section provides an option to change the fonts for the main
+			body font, headings and menu:</p>
+			<img src="images/change_fonts.jpg" alt="" width="400">
+		<p>By default you can select between the standard web-safe fonts in the 
+			font options. However, you can also add custom Google fonts.</p>
+		
+		
+		<b><u>Adding Google fonts</u></b><br />
+		<p>You can browse the Google Fonts library <a href="http://www.google.com/webfonts">here</a> </p>
+		<p>In order to use Google Fonts, the field "Enable Google Fonts" should be set to "ON".  
+		You can add additional fonts in the "Add Google Font" section.
+		</p>
+		<p>In the <b>Font Name / Font Family</b> you have to either insert the font name of the font
+			or a font family.</p>
+		<p>In the <b>Font URL</b> field you have to insert the URL of the font file.</p>
+<br/>
+		<p><b>EXAMPLE</b></p>
+		If you would like to use the <b>Nobile</b> font, click on the "Quick Use" button.<br/>
+		<img src="images/quick_use.jpg" alt="" width="250">
+ 
+		<p>In the <b>Font Name / Font Family</b> field you have to insert the font family
+			that Google Provides, in this case:<br/>
+		<b>'Nobile', sans-serif</b><br/>
+		<img src="images/font_family.jpg" alt="" width="250">
+		</p>
+
+		<p>In the <b>Font URL</b> you have to insert the font file URL only 
+			(not the entire embed link), in this case:
+		<br/><b>http://fonts.googleapis.com/css?family=Nobile</b><br/>
+		<img src="images/font_url.jpg" width="600"/>
+		</p>
+
+		<img src="images/add_font.jpg" width="500" alt="">
+
+		<p>After you click on the "Add Font" option, this font will be 
+			automatically added to the default theme font list where
+			you can choose what fonts to apply to the elements</p>
+
+	
+		<br/><br /><hr/>
+		
+		<a name="translation" ><h2>12. Translation<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />	
+	
+
+	<p>This theme is ready for translation - it comes with a .po file that contains
+		all the embedded into the theme strings. The translation process consists of two
+		main steps:</p>
+		<ul>
+			<li>Generating .mo files that contain the theme's translated strings</li>
+			<li>Configuring your language locale</li>
+		</ul>
+<br/><br/>
+	<hr>
+	<h3><a name="create_mo">a. Creating a mo file with the translated strings</a></h3>
+	<hr>
+
+	<p> There is a file called <b>default.po</b> located in the <b>lang</b> folder within the main theme folder. You have to open this
+   file with a program that can generate .mo files, such as <a href="http://www.poedit.net/download.php">PoEdit</a>.
+   Once you open it, you can insert the words in the additional language. Here is an example, with the file
+   opened with PoEdit and the meanings of the words inserted into English:</p>
+   
+    <img src="images/trans.jpg" width="450" /><br />
+   
+   <p>
+   In the same way you can insert the translations in the additional language. Once you save the document, a .mo file
+   will be generated in the directory you specify. You have to rename this .mo file to the locale of the language used.
+   For example, if this language is French, the name of the file should be fr_FR.mo. You can
+   check a list with more language locales here: <a href="http://codex.wordpress.org/WordPress_in_Your_Language">http://codex.wordpress.org/WordPress_in_Your_Language</a><br/>
+   After that, you have to insert this .mo file in the <b>lang</b> folder of the theme.
+	Please note that if you save the .mo file within the <b>lang</b> folder of the theme,
+	the lang folder will be reset when you install a theme update and that's why it is recommended
+	to set the .mo files within a child theme: </p>
+
+   		<p><b>Setting the .mo files within a child theme</b><br/>
+		If you have a child theme activated for the theme, it is recommended to
+		save the .mo files within the child theme, as they will remain saved even after a 
+		theme update which replaces all the theme files. To do this you have to:
+		</p>
+		<ol>
+			<li>Create a "lang" folder in your child theme folder and save the .mo
+				files in that folder</li>
+			<li>Go to <b>Porcelain Options</b> &raquo; 
+			<b>General Settings</b> &raquo; <b>Main</b> and select the "Child Theme Folder"
+			option in the "Load translation files from" field.</li>
+		</ol>
+		<p>You can read more about child themes <a href="#child_theme">here</a></p>
+
+	<p><b>If you would like to change some of the theme strings, but still your default language
+   	to be U.S. English</b>, you have to follow the steps above and name the generated .mo file
+   	<b>en_US.mo</b> </p>
+
+<br/><br/>
+	<hr>
+	<h3><a name="set_locale">b. Configuring your language locale</a></h3>
+	<hr>
+
+	<ul>
+		<li><p><b>If you would like to use the WordPress installation in one language only</b>, 
+			other than U.S. English and you are not using any additional language plugins, 
+			you can set the language locale in the <b>Porcelain Options</b> &raquo; 
+			<b>General Settings</b> &raquo; <b>Main</b> &raquo; <b>Default locale</b> field.
+			
+			 You can
+   check a list with more language locales here: <a href="http://codex.wordpress.org/WordPress_in_Your_Language">http://codex.wordpress.org/WordPress_in_Your_Language</a><br/>
+		</p>
+		<p>If you use additional language plugins, such as WPML you have to leave this field
+			empty, as the plugin will be the one to configure the locale based on its options.</p>
+
+
+	</li>
+		<li><p><b>If you would like to use the WordPress installation in multiple languages</b>,
+			the easiest way to accomplish this would be to use a multilingual plugin, such
+			as <a href="http://wpml.org/">WPML</a>. Multilingual plugins add options to
+			translate all the content into multiple languages and will also take care of
+			setting the locale and loading the correct text translation.</p>
+			<p>If for example, you have two additional languages, such as German and French,
+				you just have to follow the instructions above and generate a .mo file
+				for each language - that would be de_DE.mo and fr_FR.mo respectively.</p></li>
+		
+	</ul>
+
+ <br/><br/><br/>
+  
+		<a name="auto_resizing" ><h2>13. Automatic image resizing/cropping<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		<p>This theme uses the <a href="https://github.com/sy4mil/Aqua-Resizer/">Aqua Resizer</a>
+			script to automatically resize the images. This script uses the WordPress resizing functions,
+			and will create a cropped copy of the image in the same folder where the original image
+			is located. </p>
+
+		<div class="note_box"><b>Important:</b> Please note that by default the WordPress resizing
+			functionality doesn't resize images that are smaller than the default crop size and when
+			 the original image size is smaller to the crop dimensions, the original image will be used instead.
+			 This can lead to misalignments in some sections, so in order to make sure that the images
+			 will be cropped to the exact dimensions, please make sure to upload bigger than those
+			 dimensions images.</div>
+
+
+
+   <br/><br/><br/>
+  
+		<a name="widgets" ><h2>14. Plugins included<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+   <p>The theme goes with some additional plugins included:</p>
+   <ul>
+   <li>Pexeto portfolio items widget - its purpose is to display the latest portfolio thumbnails in the sidebar</li>
+   <li>Pexeto recent posts widget - its purpose is to display the latest blog posts with thumbnails in the sidebar</li>
+   <li>WP PageNavi - displays an advanced blog pagination - downloaded from <a href="http://wordpress.org/extend/plugins/wp-pagenavi/">http://wordpress.org/extend/plugins/wp-pagenavi/</a></li>
+   <li>Simple Google Map - displays a Google Map in the sidebar - downloaded from <a href="http://wordpress.org/extend/plugins/simple-google-map/">http://wordpress.org/extend/plugins/simple-google-map/</a></li>  
+   </ul>
+ 
+ <p>All the plugins are bundled with the theme zip file by default. When you activate the theme a message
+ 	saying that the theme recommends these plugins will be displayed in the top section of the admin
+ 	pages. You can either install the plugins you need or dismiss the message by clicking on the 
+ 	"Dismiss this notice" link.</p>
+ 	<p>If you decide to install any of the plugins later, you can access the recommended plugins page
+ 		in the <b>Appearance &raquo; Install Plugins</b> section.</p>
+   
+   <p><b>Note:</b> The <b>Contact Form</b> widget that you see on the demo in sidebar section is not added via plugin, but with a shortcode. It
+   is explained how to add a contact form in the <a href="#contact_form">Sidebar Contact Form</a> section above.</p>
+   <br/>
+   <br/>
+		<a name="css" ><h2>15. CSS Files<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		
+		<p>The theme contains the following CSS files:</p>
+		<ul>
+<li>style.css - the main CSS file containing the styles for the default dark skin</li> 
+<li>style_ie8.css - for Internet Explorer 8</li>  
+<li>prettyPhoto.css - style for the PrettyPhoto plugin </li>
+</ul>
+
+<b>LESS file included</b>
+<p>We have also included a style.less file which is the one that we have
+used to generate the style.css file, so if you would like to apply major
+modifications to the style of the theme, you may consider using this file
+to generate the style.css where all the main colors and sizes are declared
+as variables. The style.less file is located in the root folder of the theme.</p>
+
+<p>The style.css file consists of the following main sections:</p>
+<ol>
+        		  
+		    <li>CSS Reset</li>
+			<li>Basic Typography</li>
+			<li>Basic Document Structure and Styling</li>
+			<li>Theme Colors & Stylings</li>
+			<li>Widgets and Page Templates</li>
+			<li>Elements</li>
+			<li>Others</li>
+			<li>Responsive And Media Queries</li>
+			<li>Updates</li>
+
+		 
+		  </ol>
+<br />
+<p>You can check the full list with sections in the beginning of the file.</p>
+
+For each of the main parts of the website there are comments. For example, for the footer the comments look like this: <br />
+<pre name="code" class="css"> 
+/*-------------------- MEDIA QUERIES --------------------*/ 
+--media queries styles here--
+ </pre>
+ 
+ <div class="note_box"><b>Note:</b> If you need to do some CSS changes, it is recommended to add the new styles into the
+ Porcelain Options &raquo; Styles Settings &raquo; Additional Styles section, rather than editing the style.css file itself,
+ as these changes will be saved trough the updates of the theme.</div>
+ 
+<br />
+   
+     <br/>
+		<a name="js" ><h2>16. Javascript files<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+   
+   
+  <p>The theme contains the following JavaScript files:</p>
+		<ul>
+
+
+<li>main.js- this is the main script for the theme, it includes all the basic
+	JavaScript functionality such as initialization code and widgets scripts.
+Also, in order to decrease the number of JavaScript file requests and decrease the loading
+time, it contains the code from another JavaScript libraries/plugins:<br />
+
+&nbsp;&nbsp;- jQuery Touchwipe - downloaded from <a href="http://www.netcu.de/jquery-touchwipe-iphone-ipad-library">http://www.netcu.de/jquery-touchwipe-iphone-ipad-library</a><br/>
+&nbsp;&nbsp;- Mousewheel - downloaded from <a href="http://brandonaaron.net/code/mousewheel/docs">http://brandonaaron.net/code/mousewheel/docs</a><br />
+&nbsp;&nbsp;- jQuery imagesLoaded plugin - downloaded from <a href="http://github.com/desandro/imagesloaded">http://github.com/desandro/imagesloaded</a><br />
+&nbsp;&nbsp;- Sharrre - downloaded from <a href="http://sharrre.com/">http://sharrre.com/</a><br />
+&nbsp;&nbsp;- Pretty Photo - this ithe jQuery plugin for lightbox effect for the images on the portfolio page- downloaded from <a href="http://www.no-margin-for-errors.com/projects/prettyPhoto-jquery-lightbox-clone/#download">http://www.no-margin-for-errors.com/projects/prettyPhoto-jquery-lightbox-clone/#download</a><br />
+&nbsp;&nbsp;- jQuery Easing - for the animation transitions- downloaded from <a href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a><br />
+&nbsp;&nbsp;- hoverIntent - downloaded from <a href="http://cherne.net/brian/resources/jquery.hoverIntent.html">http://cherne.net/brian/resources/jquery.hoverIntent.html</a><br />
+&nbsp;&nbsp;- jQuery ScrollTo - downloaded from <a href="http://flesler.blogspot.com.au/2007/10/jqueryscrollto.html">http://flesler.blogspot.com.au/2007/10/jqueryscrollto.html</a><br/>
+&nbsp;&nbsp;- jQuery Waypoints - downloaded from <a href="https://github.com/imakewebthings/jquery-waypoints/">https://github.com/imakewebthings/jquery-waypoints/</a>
+	
+</li>
+
+<li>html5shiv.js - downloaded from <a href="https://github.com/aFarkas/html5shiv">https://github.com/aFarkas/html5shiv</a></li>
+
+<li>portfolio-gallery.js- this file contains the Grid Gallery page functionality.
+This file also includes the following third party libraries:<br />
+
+&nbsp;&nbsp;- jScrollPane - downloaded from <a href="http://jscrollpane.kelvinluck.com/">http://jscrollpane.kelvinluck.com/</a>
+</li>
+<li>masonry.js - jQuery Masonry - downloaded from <a href="http://masonry.desandro.com">http://masonry.desandro.com</a></li>
+<li>nivo-slider.js- the Nivo slider- downloaded from <a href="http://nivo.dev7studios.com">http://nivo.dev7studios.com</a></li>   
+<li>content-slider.js - the Content Slider (by Pexeto)</li>
+<li>colorpicker.js - script for the color picker- downloaded from <a href="http://eyecon.ro/colorpicker/#download">http://eyecon.ro/colorpicker/#download</a></li>   
+<li>jquery.cookie.js - jQuery Cookie - downloaded from <a href="http://plugins.jquery.com/project/Cookie">http://plugins.jquery.com/project/Cookie</a></li>
+<li>jquery.form.js - jQuery from - downloaded from <a href="https://github.com/malsup/form">https://github.com/malsup/form</a></li>
+   
+    </ul>
+   
+    
+    <br/>
+		<a name="psd" ><h2>17. Image resources<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		
+<br/>
+<b>Special thanks to all the great graphic resources to:</b><br/>
+<ul>
+<li>Mono Social Icons: <a href="http://icondock.com/free/mono-social-icons">http://icondock.com/free/mono-social-icons</a></li>
+<li>Iconmoon icons: <a href="http://icomoon.io/">http://icomoon.io/</a>, icon sets: Font Awesome, Entypo</li>
+</ul>
+
+<b>Images used on the demo:</b><br/>
+<ul>
+	<li><a href="http://photodune.net/">http://photodune.net/</a></li>
+	<li><a href="http://unsplash.com/">http://unsplash.com/</a></li>
+	<li><a href="http://pixeden.com/">http://pixeden.com/</a></li>
+	<li><a href="http://shutterstock.com/">http://shutterstock.com/</a></li>
+	<li><a href="http://graphicriver.net/">http://graphicriver.net/</a></li>
+</ul>
+
+
+   
+   
+   <br/>
+		<a name="php" ><h2>18. PHP files<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+  Apart of the main files needed for this theme to run, here are the other external PHP files used:
+  
+   <ul>
+<li>aq_resizer.php- the purpose of this script is to resize/crop images to smaller sizes. The file is downloaded from: <a href="https://github.com/sy4mil/Aqua-Resizer/">https://github.com/sy4mil/Aqua-Resizer/</a></li>
+<li>Envato WordPress Toolkit Library - downloaded from <a href="https://github.com/envato/envato-wordpress-toolkit-library">https://github.com/envato/envato-wordpress-toolkit-library</a></li>
+<li>class-tgm-plugin-activation.php - TGM Plugin Activation - downloaded from <a href=" https://github.com/thomasgriffin/TGM-Plugin-Activation"> https://github.com/thomasgriffin/TGM-Plugin-Activation</a></li>
+<li>recaptchalib.php - ReCAPTCHA lib - downloaded from <a href="http://recaptcha.net">http://recaptcha.net</a></li>
+</ul>
+
+<hr>	
+ 
+ <br/>
+
+
+ <a name="child_theme" ><h2>19. Installing a child theme<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+
+		<p>If you would like to apply some code tweaks, it is recommended to use a child
+			theme so that the changes can remain saved after you install theme updates.
+			If you would like to apply some CSS changes only, you can add the CSS snippets
+			in the Porcelain Options -> Typography & Styles -> Additional Styles section, however
+			if you would like to apply some additional code tweaks, such as PHP code changes,
+			it is recommended to use a child theme instead.</p>
+		<p>We have included a child theme in the maind download package - it is called
+			<b>porcelain_child.zip</b>. You can install the child theme in the same way
+			you install a standard theme - you can follow the instructions <a href="#activate">here</a></p>
+		<p>After you install the theme you can add custom CSS snippets in the style.css file of the child theme,
+			custom PHP code in the functions.php file, add the theme translation files in the <b>lang</b>
+			folder of the child theme and create other files to overwrite
+			the current templates - you can read more about using child themes in the
+			official WordPress <a href="http://codex.wordpress.org/Child_Themes">Child Themes</a> guide.</p>
+
+		<p>All the main PHP functions in the theme are set to be overwritable, so if you would like to 
+			modify the way a function works, you can just redeclare it. For example if you would like to
+			change the defaul <b>pexeto_wp_title</b> function that displays the title of the document:</p>
+
+<pre name="code" class="php">
+if(!function_exists('pexeto_wp_title')){
+	function pexeto_wp_title( $title, $sep ) {
+		//theme code goes here
+	}
+}
+</pre>
+
+<p>You can just overwrite it in the functions.php file of the child theme like this:</p>
+
+<pre name="code" class="php">
+function pexeto_wp_title($title, $sep){
+	//custom code goes here
+}
+</pre>
+
+<p>In this way, you can overwrite every theme function that is wrapped with the function_exisis check:</p>
+<pre name="code" class="php">
+if(!function_exists('function_name')){
+	//function code
+}
+</pre>
+ <br/><br/>
+ 
+		<a name="troubleshooting" ><h2>20. Troubleshooting<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+
+		<p>In this section you can check the most common issues and the solutions for them</p>
+		
+		
+		
+		<ol>
+		
+		<li><b>Fail to install the theme</b>
+		<p>If you experience any problems with installing the theme, please check the following:</p>
+		
+		<ul>
+		<li>Please make sure you have installed the theme as described in the <a href="#activate">Activating the theme</a> section</li>
+		<li>If you have used the WordPress uploader and can't upload the theme: as the theme is versatile
+		and provides lots of options, its zip file is bigger than standard themes and some servers
+		can't handle an upload with that file size. In this case you have to use an FTP client to upload the theme.
+		</li>
+		<li>If you have used an FTP client to upload the theme:<br />
+		* make sure the theme main files (such as style.css and index.php) file are located just within one directory
+		apart the wp-themes directory. The right way to locate your root theme files is
+		for example <b>themes/porcelain</b> but not <b>themes/porcelain/porcelain</b><br />
+		* the problem you are experiencing may be related with the FTP client used - in this case you can try with another one-
+		we recommend <a href="http://filezilla-project.org/download.php">FileZilla</a> FTP client.
+		</li>
+		<li>Make sure you have WordPress 3.5 or higher installed</li>
+		<li>Make sure your server is running PHP version 5 or higher. Although when developing the theme, we have followed
+		the main rules for cross-version compatibility, we have the possibility to test the theme on servers running
+		versions higher than 5.0. If your server runs an old PHP version and you get any errors when installing the theme, you
+		can contact the hosting support and ask them update PHP to a newer version.</li>
+		</ul>
+		<br />
+		</li>
+		
+
+		<li><b>Contact form not sending emails</b>
+		<p>Please refer to the <a href="http://pexetothemes.com/support/knowledgebase/contact-form-not-sending-emails/">Contact form not sending emails</a> article</p>
+		</li>
+		 	</ol>
+		<b><u>More troubleshooting articles</u></b>
+		<p>You may also consdier checking our <a href="http://pexetothemes.com/support/knowledgebase/">
+			Knowledgebase
+		</a> to search for frequently asked questions.</p>
+		 
+	
+		
+		
+		<br/>
+		<a name="support" ><h2>21. Support<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+		
+		<p>We will do our best to assist with questions directly related to 
+		the theme set up, however please note that theme support is completely voluntary for ThemeForest authors. 
+		Therefore before you contact us, please consider finding an answer to your question in:</p>
+		<ul>
+		<li>The relevant section of the documentation</li>
+		<li>Search our <a href="http://pexetothemes.com/support/knowledgebase/">Knowledgebase</a> which contains frequently asked questions</li>
+		<li><a href="troubleshooting">Troubleshooting section</a> above</li>
+		<li><a href="http://codex.wordpress.org/Main_Page">WordPress Codex</a> for general WordPress questions</li>
+		<li><a href="http://google.com">Google</a> for general questions</li>
+		</ul>
+		
+		<div class="note_box">
+		 <b>Note: </b>If you have already explored all the sources of information stated above, and you are still experiencing 
+		problems with the theme set up, you can open a ticket with your question on the <a href="http://pexetothemes.com/support/">Pexeto Support Site</a>. 
+		</div>'
+		<br/>
+		
+		<br/>
+		<a name="updates" ><h2>22. Updates<a href="#toc" class="back_to_top"> &nbsp;back to top</a></h2></a>
+		<hr />
+
+
+		<h3><a name="install-update">a. Installing an update</a></h3>
+<hr/>
+			<p>You can install an update of the theme either automatically by using the built in the theme automatic update functionality or manually.</p>
+
+		<b><u>Installing the update automatically</u></b>
+		<div class="error_box">
+		 <b>Important: </b>Please note that with the automatic theme update any code modifications done in the theme's code will be lost, so please make sure you have a backup copy of the theme files before you update the theme. 
+		</div>
+		
+		<div class="error_box">
+		<b>Important:</b> The folder that contains the theme files must be called "Porcelain" in order to automatically update the theme.
+		</div>
+		<p>In order to use the automatic update functionality of the theme, first you have to go to <b>Porcelain Options -> General -> Theme Update</b> section and insert your Envato Marketplace Username and Envato Marketplace API Key. The Envato Marketplace Username field should contain the username of the account you have used to purchase the theme on ThemeForest. <br/>
+		To obtain your API Key, you have to visit your "My Settings" page on any of the Envato Marketplaces (ThemeForest). You can get the
+		API Key in the "API Keys" section of the "My Settings" page.</p>
+		<p>When a new update is released you should see a new menu item in Dashboard called "Porcelain - New Updates". Please note that it may take several hours after the update is released to have it displayed, as the cache is refreshed periodically on several hours.
+		When you open the "Porcelain - New Updates" page you have to click on the "Automatically Update Theme" button and the theme will be automatically updated for you.
+		</p>
+		
+		<b><u>Installing an update manually </u></b>
+<p>There are two main ways of installing an update manually:</p>
+<ul>
+<li><i>By uploading the theme as a new theme (recommended)</i>- this is an easier way to accomplish this.<br/>
+	First you have to either delete your current theme or rename its folder on the server.
+	To rename the theme you have to log in via FTP to the server, navigate to the WordPress installation folder &raquo; wp-content &raquo; themes folder where you will find the theme folder that you can rename.
+	After this you just have to upload
+the updated theme zip file via the built in WordPress theme uploader as a new theme as explained <a href="#activate">here</a>
+and activate the theme. 
+
+<div class="note_box">
+		 <b>Note: </b>Please note that with the activating of the new theme it is possible your menu setting not to
+		 be saved for the new theme. If so, you just have to go to Appearance &raquo; Menus &raquo; Theme Locations, select the menu (it will be
+		 still there) and press the "Save" button.
+		</div>
+<p>Once you install the updated theme and make sure that everything is working normally, you can go back to the Themes
+section and delete the older version of the theme.</p>
+</li>
+<li><i>Via FTP</i> - you can use an FTP client (such as FileZilla) and replace all the theme files with the
+updated ones. The theme folder is located in the WordPress installation folder &raquo; wp-content &raquo; themes folder
+of the server.
+
+<div class="error_box">
+		 <b>Note: </b>Please note that with the file replacing all the code changes you have made to the files 
+		 (if you have made any) will be lost, so please
+		 make sure you have a backup copy of the theme files before you do the replacement. All the settings that
+		 you have made from the admin panel won't be lost- they will be still available.
+		</div>
+		</li>
+</ul>
+
+
+<br/><hr />
+	<h3><a name="v101">b. Version 1.0.1</a></h3><hr />	
+	<p>This update includes:</p>
+	<ul>
+		<li>Improvements to the sticky header functionality: added a fade animation
+			to the background color and improved the scrolling animation on iPad</li>
+		<li>Fixed an issue with selecting the number of columns for the standard layout of
+			services boxes not being applied.</li>
+		<li>Fixed a scrolling issue on Safari when the sticky header is enabled, 
+			related with the native elastic scrolling of the browser</li>
+		<li>WooCommerce improvements - added a woocommerce.php template to fix some
+			layout issues on the products page and improved the buttons design</li>
+
+	</ul>
+
+<br/><hr />
+	<h3><a name="v110">c. Version 1.1.0</a></h3><hr />	
+	<p>This update includes:</p>
+	<ul>
+		<li>Included PhotoShop files in the main download package (located in the PSD folder)</li>
+		<li>Fixed some compatibility issues with Underscore.js 1.5 - WordPress currently ships with Underscore.js 1.4.4,
+			however the latest version could be included in WordPress soon, so we have made sure that the theme has updated
+			the Underscore.js dependent code according to the latest release.</li>
+		<li>Fixed an issue with the tabs/accordion element - when two elements of the same type are included
+			in the same page, they didn't work independently</li>
+		<li>Code improvements and minor bug fixes</li>
+
+	</ul>
+
+<br/><hr />
+	<h3><a name="v120">d. Version 1.2.0</a></h3><hr />	
+	<p>This update includes:</p>
+	<ul>
+		<li>Fixed some compatibility issues with the upcoming WordPress 3.9, including:
+
+		<ul><li>
+			The theme's custom editor buttons are now WordPress 3.9 compatible - WordPress 3.9 includes a major update of the TinyMCE plugin (version 4.0) that requires
+			modifying the custom buttons CSS selectors and some of the initializing JavaScript functionality.
+			</li>
+			<li>Improved the appearance of the theme's dialogs in the admin panel on WordPress 3.9</li>
+		</ul>
+		<li>Changed the default formatting of the document title - the additional title formatting 
+		(such as adding the blog name) is now applied with a filter function, so that it can be
+		overwritten by plugins or a child theme.</li>
+		<li>Added a 500px icon to the default social icons set.</li>
+		<li>Issue fix: Portfolio Gallery pagination not working correctly when AJAX is disabled and a category has been selected</li>
+		<li>Other minor bug fixes and genereal code improvements</li>
+
+	</ul>
+
+<br/><hr />
+	<h3><a name="v121">e. Version 1.2.1</a></h3><hr />	
+	<p>This update includes:</p>
+	<ul>
+		<li>WordPress 4.0 compatibility issue fixes:
+		<ul>
+			<li>Columns element not working in the editor</li>
+			<li>Background section editor not resizing when it contains long content</li>
+			<li>Make the video previews responsive</li>
+		</ul>
+		</li>
+		<li>Fixed: Header social icons sometimes disappear on hover on the latest version of Chrome</li>
+		<li>Fixed: Simple Google Map widget not displaying the navigation buttons correctly</li>
+		<li>Fixed: Custom accent color option not applied to the currently selected category in the category filter of the portfolio gallery page</li>
+		<li>Improved: When sharing pages on social networks, set the featured image of the page to be set as a thumbnail</li>
+	</ul>
+
+		<h3><a name="v130">f. Version 1.3.0</a></h3><hr />	
+	<p>This update includes:</p>
+	<ul>
+		<li>Added: A Pricing Table element - you can read more about it in the 
+			<a href="#pricing">Pricing Tables</a> section</li>
+		<li>Added: Option to select the background image style and background image alignment in the content slider.
+			For more information, please refer to the <a href="#contentslider_custom_settings">Content Slider</a> section.</li>
+		<li>Added: included a child theme in the main download package - you can read more about
+		using the child theme in the <a href="#child_theme">Installing a child theme</a> section</li>
+		<li>Improved: Lightbox design</li>
+		<li>Improved: Replaced the image upload functionality in the admin with a WordPress Media select</li>
+		<li>Improved: Updated the Aqua image resizing script to the latest version which now supports
+			upscaling (resizing smaller images to a bigger size)</li>
+		<li>Improved: Updated the Envato WordPress Toolkit library to the latest version</li>
+		<li>Improved: Contact form - added a sender email option to avoid messages failing to be sent due to the Yahoo DMARC reject policy. For more information, please refer to the <a href="#contact_dmarc">Contact Form Page</a> section.</li>
+		<li>Improved & fixed: compatibility issues with the upcoming WordPress 4.1:
+			<ul>
+			<li>Fixed: WordPress link button not working in the background sections editor</li>
+			<li>Disabled the new inline edit toolbar for the theme's visual elements in the editor</li>
+			</ul>
+		</li>
+		<li>Fixed: Gallery category loads posts category archive when linking to a portfolio category within the page and the gallery page is set as a front page</li>
+		<li>General code improvements</li>
+	</ul>
+
+
+	<h3><a name="v131">g. Version 1.3.1</a></h3><hr />	
+	<p>This update includes:</p>
+	<ul>
+		<li>Security update to fix issues related with the recently found XSS <a href="https://make.wordpress.org/plugins/2015/04/20/fixing-add_query_arg-and-remove_query_arg-usage/">vulnerability of the add_query_arg()</a> function - updated the TGM Plugin Activation class
+		</li>
+		
+	</ul>
+
+	<h3><a name="v132">h. Version 1.3.2</a></h3><hr />	
+	<p>This update includes:</p>
+	<ul>
+		<li>Security fix: Updated the PrettyPhoto lightbox plugin to version 3.1.6 to fix a recently found XSS vulnerability</li>
+	</ul>
+
+	<h3><a name="v133">i. Version 1.3.3</a></h3><hr />	
+	<p>This update includes:</p>
+	<ul>
+		<li>Handle the WordPress 4.3 update <a href="https://make.wordpress.org/core/2015/06/09/eliminating-shared-taxonomy-terms-in-wordpress-4-3/"> terms splitting</a>.<br/> The upcoming WordPress 4.3 will automatically split all of the shared terms between different taxonomies, which means that it will change the IDs of those terms in the database. This can affect the theme’s elements that store references to the terms IDs, such as some elements (like sliders or services boxes) can lose their default order or when added to a page, they can load items from other elements from the same type. 
+If you have this theme update installed prior to updating to WordPress 4.3, when a term splitting occurs, the theme will change all of the references from the old IDs to the new IDs and will prevent those issues.<br/>
+			<b>Important: Please make sure to update the theme before updating WordPress to 4.3 once it is released, as the terms splitting will be performed during the WordPress upgrade process.</b></li>
+			<li>Fixed: a minor design issue in the admin with the <a href="https://usersinsights.com/">Users Insights WordPress plugin</a></li>
+			<li>General code improvements</li>
+	</ul>
+	
+	<h3><a name="v134">j. Version 1.3.4</a></h3><hr />	
+	<p>This update includes:</p>
+	<ul>
+		<li>Fixed: WordPress 4.4 issue - selected and saved sets in editor elements (recent posts element, portfolio carousel, nivo slider and pricing tables) not selected by default when editing</li>
+		<li>Added: hentry properties to the blog posts markup - this can help the search engines to more easily identify the different elements of the blog posts data</li>
+		<li>Improved: made the post titles use h1 tag on the single post page, while blog page post listing still uses h2 tags</li>
+	</ul>
+	
+	
+	<h3><a name="v135">k. Version 1.3.5</a></h3><hr />	
+	<p>This update includes:</p>
+	<ul>
+		<li>Improved: when replying to comments, adds the reply form below the comment to reply to</li>
+		<li>Fixed: WordPress 4.5 issue - the new inline link tooltip not working in background sections</li>
+		<li>Fixed: compatibility issue with 3rd party plugins: theme's editor dialogs broken when plugins load custom jQuery UI dialog styles and apply them globally to all dialogs used in the dashboard</li>
+		<li>General code improvements</li>
+	</ul>
+
+<br/><br/><br/>
+		
+		<h3 class="center alt like uppercase">Once again, thank you so much for purchasing this theme! If you like it, please don't forget to rate it on the ThemeForest site.</h3> 
+		
+		<p class="append-bottom alt large"><strong>Pexeto</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

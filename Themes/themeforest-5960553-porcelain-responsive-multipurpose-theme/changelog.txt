@@ -1,0 +1,185 @@
+M - Modified
+A - Added
+D - Deleted
+
+--------------------------------------------------------------------------------
+VERSION 1.3.5:
+--------------------------------------------------------------------------------
+
+M       functions/comments.php
+M       functions/meta.php
+M       lib/css/options.css
+M       lib/css/page-style.css
+M       lib/css/widgets.css
+M       style.css
+M       style.less
+M       template-blog.php
+
+
+
+--------------------------------------------------------------------------------
+VERSION 1.3.4:
+--------------------------------------------------------------------------------
+
+M       functions/formatting-buttons/editor-plugin.js
+M       functions/functions-general.php
+M       includes/post-template.php
+M       style.css
+M       style.less
+
+
+
+--------------------------------------------------------------------------------
+VERSION 1.3.3:
+--------------------------------------------------------------------------------
+
+A       functions/class-pexeto-term-splitting.php
+M       functions/gallery.php
+M       functions/init.php
+M       functions/shortcodes.php
+M       lib/class-pexeto-widgets-builder.php
+M       lib/css/custom-page.css
+M       lib/custom-pages/class-pexeto-custom-page-helper.php
+M       style.css
+M       style.less
+
+
+
+--------------------------------------------------------------------------------
+VERSION 1.3.2:
+--------------------------------------------------------------------------------
+
+M       js/main.js
+M       style.css
+M       style.less
+
+
+
+--------------------------------------------------------------------------------
+VERSION 1.3.1:
+--------------------------------------------------------------------------------
+
+M       functions/gallery.php
+M       functions/init-data.php
+M       lib/utils/class-tgm-plugin-activation.php
+M       style.css
+M       style.less
+
+
+
+--------------------------------------------------------------------------------
+VERSION 1.3.0:
+--------------------------------------------------------------------------------
+
+M       envato-wordpress-toolkit-library/class-envato-protected-api.php
+M       envato-wordpress-toolkit-library/class-envato-wordpress-theme-upgrader.php
+M       functions/ajax.php
+M       functions/formatting-buttons/btnicons/btnicons-2x.png
+A       functions/formatting-buttons/btnicons/pricing-tables.png
+M       functions/formatting-buttons/buttons-init.php
+M       functions/formatting-buttons/buttons.css
+M       functions/formatting-buttons/custom-editor-style.css
+M       functions/formatting-buttons/editor-plugin.js
+M       functions/functions-general.php
+M       functions/gallery.php
+M       functions/html-builders.php
+M       functions/init-data.php
+M       functions/options/documentation.php
+M       functions/options/general.php
+M       functions/portfolio.php
+M       functions/shortcodes.php
+A       images/prettyPhoto/pexeto/sprite_bot.png
+A       images/prettyPhoto/pexeto/sprite_expa.png
+A       images/prettyPhoto/pexeto/sprite_expa2.png
+A       images/prettyPhoto/pexeto/sprite_fit.png
+M       images/prettyPhoto/pexeto/sprite_next.png
+A       images/prettyPhoto/pexeto/sprite_next_new.png
+M       images/prettyPhoto/pexeto/sprite_prev.png
+A       images/prettyPhoto/pexeto/sprite_prev_new.png
+M       includes/css-loader.php
+M       includes/slider-content.php
+M       js/content-slider.js
+M       lib/admin-scripts-and-styles.php
+M       lib/ajax.php
+M       lib/class-pexeto-update-notifier.php
+M       lib/class-pexeto-widgets-builder.php
+M       lib/css/options.css
+M       lib/css/page-style.css
+M       lib/css/widgets.css
+M       lib/custom-pages/class-pexeto-custom-page-builder.php
+M       lib/js/custom-page.js
+M       lib/js/update-notifier.js
+M       lib/js/widgets.js
+M       lib/utils/aq_resizer.php
+M       lib/utils/class-tgm-plugin-activation.php
+M       style.css
+M       style.less
+M       template-portfolio-gallery.php
+
+
+
+--------------------------------------------------------------------------------
+VERSION 1.2.1:
+--------------------------------------------------------------------------------
+
+M       functions/formatting-buttons/custom-editor-style.css
+M       functions/formatting-buttons/editor-plugin.js
+M       header.php
+M       includes/css-loader.php
+M       lib/css/page-style.css
+M       style.css
+M       style.less
+
+
+
+--------------------------------------------------------------------------------
+VERSION 1.2.0:
+--------------------------------------------------------------------------------
+
+M       functions/formatting-buttons/buttons-init.php
+M       functions/formatting-buttons/buttons.css
+M       functions/formatting-buttons/editor-plugin.js
+M       functions/functions-general.php
+M       functions/init-data.php
+M       functions/options/general.php
+M       functions/options/sliders.php
+M       header.php
+A       images/icons/500px.png
+A       images/icons_white/500px.png
+M       js/main.js
+M       js/portfolio-gallery.js
+M       lib/admin-scripts-and-styles.php
+M       lib/css/page-style.css
+M       lib/css/update-notifier.css
+M       lib/css/widgets.css
+M       lib/options/class-pexeto-options.php
+M       style.css
+M       style.less
+M       template-portfolio-gallery.php
+
+--------------------------------------------------------------------------------
+VERSION 1.1.0:
+--------------------------------------------------------------------------------
+
+M       functions/shortcodes.php
+M       js/main.js
+M       lib/admin-scripts-and-styles.php
+M       lib/ajax.php
+M       lib/css/custom-page.css
+M       lib/js/custom-order.js
+M       lib/js/options.js
+M       lib/js/page-options.js
+M       lib/js/widgets.js
+M       style.css
+M       style.less
+
+--------------------------------------------------------------------------------
+VERSION 1.3.5:
+--------------------------------------------------------------------------------
+
+M       functions/functions-general.php
+M       includes/css-loader.php
+M       js/main.js
+M       style.css
+M       style.less
+A       woocommerce.php
